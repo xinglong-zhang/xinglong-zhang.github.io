@@ -1,4 +1,6 @@
+url: "https://xinglong-zhang.github.io" # the base hostname & protocol for your site
 plugins:
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 title:
