@@ -25,6 +25,15 @@ a:hover {
 	text-decoration: none;
 }
 
+figure {
+  float: center;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+
 .padding {
     position: absolute;
     height: 500px;
@@ -34,6 +43,9 @@ a:hover {
     padding-left: 5cm;
 }
 
+.caption p {
+font-size: 10em;
+}
 
 body {
 	font-size: 11.5pt;
@@ -62,19 +74,19 @@ h1,h2,h3,h4 {
 }
 
 h2 {
-	font-size: 1.75em;
-    color: grey
+	font-size: 1.5em;
+    color: black
 }
 
 h3 {
-	color: black;
+	color: brown;
 	margin-bottom: 0.2em;
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 h4 {
 	color: brown;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 h5{
@@ -473,14 +485,14 @@ ul h4 {
 
 
 #table {
-	padding: 50px 10px 15px 180px;
-	position: horizontal;
+	padding: 10px 80px 10px 320px;
+	position: center;
 	background: white;
 	margin: 10;
-	height: 100px;
+	height: 80px;
 	width: 900px;
-	border-top: solid 2px #5AD7D7;
-	border-bottom: solid 2px #5AD7D7;
+	border-top: solid 4px #5AD7D7;
+	border-bottom: solid 4px #5AD7D7;
 }
 
 p.copyright {
