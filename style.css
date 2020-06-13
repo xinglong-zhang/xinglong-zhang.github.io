@@ -485,7 +485,7 @@ ul h4 {
 
 
 #table {
-	padding: 10px 80px 10px 320px;
+	padding: 10px 100px 10px 200px;
 	position: center;
 	background: white;
 	margin: 10;
@@ -493,6 +493,7 @@ ul h4 {
 	width: 900px;
 	border-top: solid 4px #5AD7D7;
 	border-bottom: solid 4px #5AD7D7;
+    border-spacing: 10px 0;
 }
 
 p.copyright {
