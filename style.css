@@ -37,10 +37,10 @@ figure {
 .padding {
     position: absolute;
     height: 500px;
-    padding-right: 3cm;
+    padding-right: 0cm;
 }
 .paddingleft {
-    padding-left: 5cm;
+    padding-left: 4.3cm;
 }
 
 .caption p {
@@ -183,15 +183,16 @@ ul h4 {
 }
 
 #header {
+    margin: auto 20px;
 	height: 305px;
 	position: relative;
 	background:  white url(images/newc1.jpg) left no-repeat;
-	padding-right: 35px;
-    padding-bottom: 35px;
-    padding-top: 35px;
+	padding-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     padding-left: 0px;
 	color: #FFFFFF;
-	width: 940px;
+	width: 920px;
 }
 
 
