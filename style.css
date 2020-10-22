@@ -486,10 +486,10 @@ ul h4 {
 
 
 #table {
-	padding: 10px 100px 10px 200px;
+	padding: 10px 100px 10px 150px;
 	position: center;
 	background: white;
-	margin: 10;
+	margin: 0;
 	height: 80px;
 	width: 900px;
 	border-top: solid 4px #5AD7D7;
@@ -516,3 +516,8 @@ div.container {
     padding-left: 1.5em;
 }
 
+td {
+        width: 150px;
+        text-align: center;
+        padding: 7px;
+      }
