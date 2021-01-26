@@ -149,7 +149,7 @@ ul h4 {
 }
 
 #content {
-	width: 665px;
+	width: 700px;
 	float: left;
     text-align: justify
 }
@@ -231,7 +231,7 @@ ul h4 {
 }
 
 #menu {
-	padding: 15px 10px 0px 50px;
+	padding: 15px 50px 0px 50px;
 	position: horizontal;
 	background: #209D9D url(images/img02.gif) repeat-x top left;
 	margin: 10;
