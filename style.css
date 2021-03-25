@@ -521,3 +521,8 @@ td {
         text-align: center;
         padding: 7px;
       }
+
+mark.blue {
+    color:cornflowerblue;
+    background: none;
+}
