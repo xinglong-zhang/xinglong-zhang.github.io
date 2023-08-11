@@ -40,15 +40,47 @@ figure {
     padding-right: 0cm;
 }
 .paddingleft {
-    padding-left: 4.3cm;
+    padding-left: 3.0cm;
 }
 
 .caption p {
 font-size: 10em;
 }
 
+/* Adjust the width and margin as needed */
+.publication-table {
+    border-collapse: separate; /* Use separate border-collapse */
+    border-spacing: 10px 0;    /* Adjust spacing as needed */
+    width: 100%;
+}
+
+.publication-table td {
+    vertical-align: top;
+}
+
+.publication-details {
+    width: 85%; /* Adjust width as needed */
+    vertical-align: top; /* Align content to the top of each cell */
+    padding: 10px; /* Add padding to cells */
+    text-align: justify;
+    font-size: 12pt;
+}
+
+.publication-image {
+    width: 15%; /* Adjust width as needed */
+    vertical-align: top; /* Align content to the top of each cell */
+}
+
+.publication-image img {
+    max-width: 100%; /* Ensure images don't exceed cell width */
+    height: auto; /* Maintain image aspect ratio */
+    display: block; /* Prevent images from overlapping text */
+    margin: 0 auto; /* Center images horizontally within the cell */
+}
+
+
 body {
-	font-size: 11.5pt;
+	font-size: 12pt;
 	color: #5C5B5B;
 	line-height: 1.75em;
 	!background: url(images/dreaming2.jpg) repeat-x bottom center;
@@ -149,9 +181,10 @@ ul h4 {
 }
 
 #content {
-	width: 780px;
+	width: 860px;
 	float: left;
-    text-align: justify
+    text-align: justify;
+    font-size: 12pt;
 }
 
 #content-box1 {
