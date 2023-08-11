@@ -68,14 +68,16 @@ font-size: 10em;
 
 .publication-image {
     width: 20%; /* Adjust width as needed */
-    vertical-align: top; /* Align content to the top of each cell */
+    vertical-align: middle; 
+    border-spacing: inherit;
 }
 
 .publication-image img {
     max-width: 100%; /* Ensure images don't exceed cell width */
     height: auto; /* Maintain image aspect ratio */
-    display: block; /* Prevent images from overlapping text */
-    margin: 0 auto; /* Center images horizontally within the cell */
+    display: inline-block;  /* Display the image as inline-block to center it */
+    vertical-align: middle; /* Align the image vertically middle within the inline-block */
+    margin-top: 12px; /* Add spacing on top of the image */
 }
 
 
