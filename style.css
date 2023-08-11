@@ -50,7 +50,7 @@ font-size: 10em;
 /* Adjust the width and margin as needed */
 .publication-table {
     border-collapse: separate; /* Use separate border-collapse */
-    border-spacing: 10px 0;    /* Adjust spacing as needed */
+    border-spacing: 0 30px;    /* Adjust spacing as needed */
     width: 100%;
 }
 
@@ -67,7 +67,7 @@ font-size: 10em;
 }
 
 .publication-image {
-    width: 15%; /* Adjust width as needed */
+    width: 20%; /* Adjust width as needed */
     vertical-align: top; /* Align content to the top of each cell */
 }
 
