@@ -28,7 +28,8 @@ a:hover {
 figure {
   float: center;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  text-justify: auto;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
