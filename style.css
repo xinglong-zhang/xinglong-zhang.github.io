@@ -35,6 +35,12 @@ figure {
   text-indent: 0;
 }
 
+figure img {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto; /* Set left and right margins to "auto" to center horizontally */
+}
+
+
 .padding {
     position: absolute;
     height: 500px;
@@ -136,7 +142,7 @@ img.alignleft {
 }
 
 img.aligncenter {
-	margin: 5px 20px 20px 05px;
+	margin: 5px 20px 20px 5px;
 	float: center;
 }
 
