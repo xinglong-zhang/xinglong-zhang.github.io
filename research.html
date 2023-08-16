@@ -39,36 +39,83 @@
           
           <p>&nbsp;</p>
       	  <h1 id="ResearchInterests">Research Interests</h1>
-		<br/>
-            <h2>Mechanistic studies&nbsp;</h2>
             <br>
-            <h4>Organometallic catalysis</h4>
-            <p> Transition metal (TM) catalysed C–H functionalisations present many opportunities for organic synthesis by forging useful C–X (where X = B, C, O, N, S, halogens) bonds from unreactive, ubiquitous C–H bonds present in many organic molecules. The use of TMs to <i>selectively</i> functionalise C–H bonds is particularly attractive as it provides atom economical ways to either convert small alkanes to higher valued, functionalised molecules or directly manipulating complex molecules with other functional groups present. Due to the multistep nature of these complex mechanisms, an understanding of the full catalytic cycle is essential in determining the key intermediates and turnover-frequency determining step. We applied electronic structure calculations, mainly density functional theory (DFT) studies, to elucidate the reaction mechanism.
-            <figure> <a href="images/alkynylation.jpeg" target="_blank"><img src ="images/alkynylation.jpeg" width="650" align="center"></a>
-            <br>
-            <figurecaption><p>Gibbs energy profile for Pd(OAc)<sub>2</sub>-catalysed alkynylation. MPAA ligand lowers the barrier of C–H activaiton (<b>ts-1'</b> over <b>ts-1</b>). In addition, silver acetate assists in lowering the barrier of &beta;-bromide elimination (<b>ts-4'</b> over <b>ts-4</b>).</p></figurecaption>
-            </figure>
-            </p>
- 
-            <h4>Chemical biology</h4>
-            <p>The labelling of &alpha;-C of amino acid residues can be useful as potential probes for investigating chemical structures and mechanisms. This is especially important if intact small peptides and proteins can be labelled <i>in situ</i>. Dehydroalanine (Dha) amino acid residue, formed from postsynthetic modifications and normal metabolism, can serve as a target for deteuration at its &alpha;-C. The mechanism for the formation of dehydroalanine from dialkylated cysteine residue can be investigated using quantum mechanical tools such as DFT. The competing mechanisms of E2 elimination vs deprotonation forming a sulfonium ylide followed by intramolecular  ‘carba-Swern’ type cycloreversion can be directly compared.
-                <figure>
-                    <a href="images/dha_formation.jpeg" target="_blank"><img src ="images/dha_formation.jpeg" width="650" align="center"></a>
-                    <br>
-            <figurecaption><p>Gibbs energy profile for the competing mechanisms of Dha formation from dialkylated cysteine residue. HOMO (at isovalue of 0.05 a.u.) shows concerted electron movement as the formal [3+2] cycloreversion occurs.</p></figurecaption>
-                </figure>
-            </p>
-            <br>
-                <h2>Reactivity and selectivity studies&nbsp;</h2>
-            <p> In the study of reaction mechanisms, we often need to understand the molecular origins giving rise to different chemical selectivities. Additionally, we can compare chemical reactivities of different substrates. In the <i>meta</i>-selective C–H functionalisation of arenes (first panel), we are able to computationally elucidate the origins behind the exclusive <i>meta</i>- over <i>para</i>- or <i>ortho</i>-selectivity. We do this by comparing the turnover-frequency determining transition states (TDTSs) at each site (middle panel). We are able to computationally calculate the differences of the ring strain in the different sized palladacylce intermediate using isodesmic reaction enthalpy calculations (not shown).
-                <figure>
-                    <a href="images/selectivity.jpeg" target="_blank"><img src ="images/selectivity.jpeg" width="650" align="center"></a>
-                    <br>
-            <figurecaption> <p>Highly <i>meta</i>-selective allylation of arenes (first panel) and the relative barriers for arene site selectivity (middle panel) and the ring strains for <i>E</i>-allyl product formation over <i>Z</i>-allyl and styrenyl product formations (last panel).</p></figurecaption>
-                </figure>
-            The formation of final (either allyl or styrenyl) product requires &beta;-H elimination. This step requires the requisite H-atom to be coordinated to the Pd-metal before it can be eliminated. From the dihedral scan for the barriers to bring the target H-atom to interact agostically with the Pd-center, we can see that the formation of <i>E</i>-allyl product has the lowest such barrier; the rotational barrier to bring the H-atom to interact with Pd-center in order to form styrenyl product is way larger than forming allyl products (note the different energy scales).
+            <h2> <strong>Research Summary</strong>&nbsp;</h2>
+            We are interested in employing electronic structure theory calculations, mainly relying on <a href=" https://en.wikipedia.org/wiki/Density_functional_theory">density funnctional theory (DFT)</a>, to perform computational mechanistic investigations of complex organic and organometallic catalytic systems of both academic and industrial significance. We currently focus on transition-metal catalysed C–H functionalisation as well as organocatalytic asymmetric synthesis for complex molecules constructions. <br>
             
+            We are building up capabililies in applying machine learning interatomic potentials (MLIPs) to study traditionally challenging chemical systems such as dynamic and entropic effects that are hard to capture accurately with static DFT. Our interests also include coding and workflow development to facilitate high-throughput quantum chemical studies and machine learning applications, with the goal of streamlining computational research practices. <!-- My future research directions include studying catalytic systems for CO<sub>2</sub> conversion and supramolecular cage catalysts for sustainable syntheses. -->
+            <br>
+            <br>
+            <ol>
+                
+            <h2> <li>Computational Homogenous Catalysis&nbsp;</li></h2>
+            <h3>Organometallic catalysis</h3>
+                <h4>C–H functionalisation</h4>
+            <p> 
+                Transition metal (TM) catalysed C–H functionalisations present many opportunities for organic synthesis by forging useful C–X bonds from unreactive, ubiquitous C–H bonds present in many organic molecules. The use of TMs to <i>selectively</i> functionalise C–H bonds is particularly attractive as it provides atom economical ways to either convert small alkanes to higher valued, functionalised molecules or directly manipulating complex molecules with other functional groups present. 
+                
+                Such TM-catalysed C–H functionalisation usually rely on directing groups (DGs) for target C–H activation. Directing group free methods have also been developed to sidestep the need for the introduction and subsequent removal of covalent DGs for step economy. We are interested in studying the mechanisms of such DG-assisted and DG-free catalytic systems.
+                
+                <figure> <a href="images/chf.jpeg" target="_blank"><img src ="images/chf.jpeg" width="860" align="left"></a>
+                    <figurecaption>
+                        <p> a) Transition metal-catalysed selective C–H activation using covalent/non-covalent directing groups or innate functional group present in substrate. b) Enantioselective C–H functionalisation with simultaneous chirality control.</p>
+                    </figurecaption>
+                </figure>
+                
+                Due to the multistep nature of these complex mechanisms, an understanding of the full catalytic cycle is essential in determining the key intermediates and turnover-frequency determining step. By exploring the key transition states and intermediates on the potential energy surface of the system, we are able to propose catalytic mechanism for a given reaction.
+                <figure> <a href="images/alkynylation.jpeg" target="_blank"><img src ="images/alkynylation.jpeg" width="860" align="left"></a>
+                    <figurecaption>
+                        <p>Gibbs energy profile for Pd(OAc)<sub>2</sub>-catalysed alkynylation. MPAA ligand lowers the barrier of C–H activaiton (<b>ts-1'</b> over <b>ts-1</b>). In addition, silver acetate assists in lowering the barrier of &beta;-bromide elimination (<b>ts-4'</b> over <b>ts-4</b>).</p>
+                    </figurecaption>
+                </figure>
             </p>
+                
+            <p> 
+                In the study of reaction mechanisms, we often need to understand the molecular origins giving rise to different chemical selectivities. We may also need to compare chemical reactivities of different substrates. For example, in the <i>meta</i>-selective C–H functionalisation of arenes (top panel), we are able to computationally elucidate the origins behind the exclusive <i>meta</i>- over <i>para</i>- or <i>ortho</i>-selectivity. We do this by comparing the turnover-frequency determining transition states (TDTSs) at each site (middle panel). We are able to computationally calculate the differences of the ring strain in the different sized palladacylce intermediate using isodesmic reaction enthalpy calculations to compare the different degrees of ring strain in each transition state.
+                <figure> <a href="images/selectivity.jpeg" target="_blank"><img src ="images/selectivity.jpeg" width="850" align="center"></a>
+                    <figurecaption> <p>Highly <i>meta</i>-selective allylation of arenes (first panel) and the relative barriers for arene site selectivity (middle panel) and the ring strains for <i>E</i>-allyl product formation over <i>Z</i>-allyl and styrenyl product formations (last panel).</p></figurecaption>
+                </figure>
+            
+                The formation of final (either allyl or styrenyl) product requires &beta;-H elimination. This step requires the requisite H-atom to be coordinated to the Pd-metal before it can be eliminated. From the dihedral scan for the barriers to bring the target H-atom to interact agostically with the Pd-center, we can see that the formation of <i>E</i>-allyl product has the lowest such barrier; the rotational barrier to bring the H-atom to interact with Pd-center in order to form styrenyl product is way larger than forming allyl products (note the different energy scales).
+
+            </p>
+                
+            
+            <h3>Organocatalysis catalysis</h3>
+                <h4>N-heterocyclic carbene (NHC) catalysis</h4>
+                
+                <p>NHC organocatalysts offer diverse catalytic activation modes: NHC-activated species can react with either electrophile at carbonyl carbon via umpolung addition or with nucleophile via oxidised Brewslow intermediate. This provides many avenues for computational tools to study the detailed mechanisms. Our lab will study metal-free organocatalysis including carbene catalysis. We aim to contribute to the field of organocatalysis for chiral molecules construction with the aim of discovering novel activation modes and functionalising challenging inert molecules such as carbonyl compounds, ketenes and alcohols for applications in pharmaceutical, agrochemical and specialty chemicals syntheses. Some challenges in the field such as using  NHCs as asymmetric Brønsted bases will be explored. </p>
+                
+                <figure> 
+                    <a href="images/organocatalysis.jpeg" target="_blank"><img src ="images/organocatalysis.jpeg" width="860" align="center"></a>
+                    <figurecaption>
+                        <p> c) Ambiphilic reactivity of organocarbene catalysts. d) Examples of carbene catalysed reactions using various substrates. </p>
+                    </figurecaption>
+                </figure>
+                
+            <h4>Chemical biology</h4>
+            <p>We are also able to computationally model chemical reactions within a biological environment. In one project, we applied DFT studies to understand the labelling of &alpha;-C of amino acid residues, which can be useful as potential probes for investigating chemical structures and mechanisms. This is especially important if intact small peptides and proteins can be labelled <i>in situ</i>. Dehydroalanine (Dha) amino acid residue, formed from postsynthetic modifications and normal metabolism, can serve as a target for deteuration at its &alpha;-C. The mechanism for the formation of dehydroalanine from dialkylated cysteine residue can be investigated using quantum mechanical tools such as DFT. The competing mechanisms of E2 elimination vs deprotonation forming a sulfonium ylide followed by intramolecular  ‘carba-Swern’ type cycloreversion can be directly compared.
+                <figure>
+                    <a href="images/dha_formation.jpeg" target="_blank"><img src ="images/dha_formation.jpeg" width="800" align="center"></a>
+                    <br>
+                    <figurecaption><p>Gibbs energy profile for the competing mechanisms of Dha formation from dialkylated cysteine residue. HOMO (at isovalue of 0.05 a.u.) shows concerted electron movement as the formal [3+2] cycloreversion occurs.</p></figurecaption>
+                </figure>
+            </p>
+            <br>
+                
+          <h2><li>Machine Learning for Chemistry&nbsp;</li></h2>
+                
+                <p>Traditional DFT studies in catalytic systems often rely on static DFT with implicit solvation models1. While this approach provides explanatory and predictive successes at reduced computational costs, it may fall short when solvent molecules actively participate in the reaction and explicit solvation is required. However, studying catalytic systems with explicit solvation at the DFT level can be computationally prohibitive, especially for large dynamical systems where numerous trajectories are needed. </p>
+                
+                <figure>
+                    <a href="images/ml4chem.jpg" target="_blank"><img src ="images/ml4chem.jpg" width="780" align="center"></a>
+                    <br>
+                    <figurecaption><p>Machine learning-accelerated molecular dynamics (MD) simulations leveraging on active learning strategy. Figure adapted and modified from <a target="_blank" href="https://doi.org/10.1039/D3SC02482B">Chem. Sci., 2023, 14, 8338</a></p></figurecaption>
+                </figure>
+
+                <p>Building upon our work on MLIPs for reactive chemistry in heterogenous catalysis, we are currently exploring how to apply such MLIPs for studying homogenous catalytic systems where explicit solvents and large entropic changes play important roles. We hope to leverage active learning to reduce training costs without worrying about the transferability of the MLIP potential. With these tools, the study of costly and challenging systems, such as explicit solvation and dynamical effects on a large length- and time-scale, can be routinely carried out at DFT-level accuracy within affordable costs.</p>
+                
+            </ol>
             
           <p>&nbsp;</p>
       	  <h1 id="Experiences">Research and Work Experiences</h1>
