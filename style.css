@@ -66,7 +66,7 @@ font-size: 10em;
 }
 
 .publication-details {
-    width: 85%; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     vertical-align: top; /* Align content to the top of each cell */
     padding: 10px; /* Add padding to cells */
     text-align: justify;
@@ -74,7 +74,7 @@ font-size: 10em;
 }
 
 .publication-image {
-    width: 20%; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     vertical-align: middle; 
     border-spacing: inherit;
 }
@@ -132,8 +132,16 @@ h4 {
 
 h5{
     letter-spacing: 0pt;
-    font-size: 0.5em;
-    color: teal
+    font-size: 1.0em;
+    color: teal;
+}
+
+
+h6{
+    letter-spacing: 0pt;
+    font-size: 0.95em;
+    font-weight: normal;
+    color: black;
 }
 
 img.alignleft {
@@ -225,17 +233,19 @@ ul h4 {
 }
 
 #header {
-    margin: auto 20px;
+    margin: auto 40px;
 	height: 305px;
+    width: 1050px;
 	position: relative;
-	background:  white url(images/cuhk_science.jpeg) left no-repeat;
+    background: white url(images/cuhk_science.jpeg) no-repeat; /* Scale and center the background image */
     background-size: 970px;
+    background-position: center;
+    background-size: cover;
 	padding-right: 0px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-left: 0px;
 	color: #FFFFFF;
-	width: 1020px;
 }
 
 
@@ -256,6 +266,20 @@ ul h4 {
 
 #logo h1 {
 	font-size: 3.25em;
+}
+
+/*XZ*/
+
+#myColor {
+    color: crimson;
+}
+
+#myList {
+	padding: 10px 20px 40px 60px;
+	position: horizontal;
+	margin: 10;
+    font-size: 22
+        
 }
 
 #slogan {
@@ -279,7 +303,7 @@ ul h4 {
 	background: #209D9D url(images/img02.gif) repeat-x top left;
 	margin: 10;
 	height: 50px;
-	width: 100px;
+	width: 1080px;
     border-left: #1C7575;
     border-right: #1C7575;
 	border-top: solid 1px #1C7575;
@@ -538,7 +562,7 @@ ul h4 {
 	background: white;
 	margin: 10;
 	height: 50px;
-	width: 890px;
+	width: 1000px;
 	border-top: solid 4px #5AD7D7;
 	border-bottom: solid 4px #5AD7D7;
     border-spacing: 10px 0;
@@ -564,9 +588,9 @@ div.container {
 }
 
 td {
-        width: 150px;
+        width: 950px;
         text-align: center;
-        padding: 7px;
+        padding: 10px;
       }
 
 mark.blue {
