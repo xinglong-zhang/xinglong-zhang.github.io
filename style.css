@@ -331,7 +331,7 @@ ul h4 {
 .header-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Scale image while maintaining aspect ratio */
+/*  object-fit: cover;  Scale image while maintaining aspect ratio */
 }
 
 #logo {
