@@ -92,7 +92,7 @@ figure img {
 }
 .people-table {
   border-collapse: separate; /* Use separate border-collapse */
-  border-spacing: 0 30px; /* Adjust spacing as needed */
+  border-spacing: 0 10px; /* Adjust spacing as needed */
   width: 100%;
 }
 
@@ -145,6 +145,22 @@ figure img {
 }
 .award-details td:nth-child(2) {
   width: 85%; /* Set width for the second column */
+}
+
+.member-table {
+  border-collapse: separate; /* Use separate border-collapse */
+  border-spacing: 0 10px; /* Adjust spacing as needed */
+  width: 100%;
+}
+
+.member-table th:nth-child(1),
+.member-table td:nth-child(1) {
+  width: 50%; /* Set width for the first column */
+}
+
+.member-table th:nth-child(2),
+.member-table td:nth-child(2) {
+  width: 50%; /* Set width for the second column */
 }
 
 body {
