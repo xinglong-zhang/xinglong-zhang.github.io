@@ -87,6 +87,60 @@ font-size: 10em;
     margin-top: 12px; /* Add spacing on top of the image */
 }
 
+#people-content {
+	width: 1050px;
+	float: left;
+    text-align: justify;
+    font-size: 12pt;
+}
+.people-table {
+    border-collapse: separate; /* Use separate border-collapse */
+    border-spacing: 0 30px;    /* Adjust spacing as needed */
+    width: 100%;
+}
+
+.people-table th:nth-child(1),
+.people-table td:nth-child(1) {
+    width: 30%; /* Set width for the first column */
+}
+
+.people-table th:nth-child(2),
+.people-table td:nth-child(2) {
+    width: 70%; /* Set width for the second column */
+}
+
+
+.people-details {
+    width: 100%; /* Adjust width as needed */
+    text-align: left; /* Align content to the left */
+    font-size: 12pt;
+    padding: 2px;
+    border-collapse: collapse;
+    vertical-align: top;
+    border-spacing: 0 10px; /* Adjust the second value to increase or decrease the vertical spacing */
+}
+
+.people-details th,
+.people-details td {
+    width: 100%;
+    padding: 0px; /* Add padding for cells */
+}
+
+.people-details th:nth-child(1),
+.people-details td:nth-child(1) {
+    width: 20%; /* Set width for the first column */
+}
+
+.people-details th:nth-child(2),
+.people-details td:nth-child(2) {
+    width: 40%; /* Set width for the second column */
+}
+
+.people-details th:nth-child(3),
+.people-details td:nth-child(3) {
+    width: 40%; /* Set width for the third column */
+}
+
 
 body {
 	font-size: 12pt;
@@ -125,9 +179,18 @@ h3 {
     font-size: 1.5em;
 }
 
+.h3-text{
+    text-align: center;
+    color: darkblue;
+}
+
 h4 {
 	color: brown;
 	font-size: 1.2em;
+}
+.h4-text{
+    color: black;
+    text-align: left;
 }
 
 h5{
