@@ -106,6 +106,7 @@ figure img {
   width: 70%; /* Set width for the second column */
 }
 
+.award-details,
 .people-details {
   width: 100%; /* Adjust width as needed */
   text-align: left; /* Align content to the left */
@@ -116,25 +117,34 @@ figure img {
   border-spacing: 0 10px; /* Adjust the second value to increase or decrease the vertical spacing */
 }
 
+.award-details th,
+.award-details td,
 .people-details th,
 .people-details td {
   width: 100%;
   padding: 0px; /* Add padding for cells */
 }
 
-.people-details th:nth-child(1),
 .people-details td:nth-child(1) {
   width: 20%; /* Set width for the first column */
 }
 
-.people-details th:nth-child(2),
 .people-details td:nth-child(2) {
-  width: 40%; /* Set width for the second column */
+  width: 35%; /* Set width for the second column */
 }
 
-.people-details th:nth-child(3),
 .people-details td:nth-child(3) {
-  width: 40%; /* Set width for the third column */
+  width: 45%; /* Set width for the third column */
+}
+
+.award-details th:nth-child(1) {
+  width: 100%; /* Set width for the first column */
+}
+.award-details td:nth-child(1) {
+  width: 15%; /* Set width for the first column */
+}
+.award-details td:nth-child(2) {
+  width: 85%; /* Set width for the second column */
 }
 
 body {
