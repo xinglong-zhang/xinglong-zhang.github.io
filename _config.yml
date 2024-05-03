@@ -11,4 +11,4 @@ description:
 
 author:
   - xinglong zhang
-baseurl: "/zhang_lab" # the baseurl
+baseurl: "." # the baseurl
