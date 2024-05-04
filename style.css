@@ -163,6 +163,10 @@ figure img {
   width: 50%; /* Set width for the second column */
 }
 
+.collaborator-table {
+  padding-left: 100px;
+}
+
 body {
   font-size: 12pt;
   color: #5c5b5b;
