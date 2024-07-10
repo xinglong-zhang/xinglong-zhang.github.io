@@ -689,6 +689,26 @@ mark.blue {
   background: none;
 }
 
+mark.red {
+  color: red;
+  background: none;
+}
+
+mark.orange {
+  color: orange;
+  background: none;
+}
+
+mark.coral {
+  color: coral;
+  background: none;
+}
+
+mark.crimson {
+  color: crimson;
+  background: none;
+}
+
 .text-box {
   border: 2px solid #000; /* Border around the box */
   padding: 20px; /* Space inside the box */
