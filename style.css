@@ -404,7 +404,7 @@ ul h4 {
   list-style: none;
   padding-top: 30px;
   position: horizontal;
-  left: -15px;
+  left: 15px;
 }
 
 #menu ul li {
@@ -419,6 +419,7 @@ ul h4 {
   color: #ffffff;
   letter-spacing: 0px;
   font-size: 1.25em;
+  margin-right: 20px; 
 }
 
 #menu ul li span b {
