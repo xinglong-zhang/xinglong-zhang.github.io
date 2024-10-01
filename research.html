@@ -112,7 +112,6 @@
             </figurecaption>
           </figure>
 
-          <!--
           Due to the multistep nature of these complex mechanisms, an
           understanding of the full catalytic cycle is essential in determining
           the key intermediates and turnover-frequency determining step. By
@@ -173,7 +172,75 @@
           barrier to bring the H-atom to interact with Pd-center in order to
           form styrenyl product is way larger than forming allyl products (note
           the different energy scales).
--->
+        </p>
+        <font size="3"
+          ><strong> <u>References:</u></strong></font
+        ><br />
+        <b>Palladium catalysts:</b>
+        <p>
+          1. <i>Angew. Chem. Int. Ed.</i>, <b>2019</b>, 58, 5633–5638.<br />
+          2. <i>Angew. Chem. Int. Ed.</i>, <b>2019</b>, 58, 10353–10360. <br />
+          3. <i>J. Am. Chem. Soc.</i>, <b>2020</b>, 142, 8, 3762–3774.<br />
+          4. <i>J. Am. Chem. Soc.</i> <b>2022</b>, 144, 27, 12032–12042. <br />
+          5. <i>Nat. Chem.</i>, <b>2023</b>, 15, 1626–1635.<br />
+          6. <i>ACS Catal.</i>, <b>2023</b>, 13, 21, 14000–14011. <br />
+
+          <b>Rhodium catalysts:</b> <br />
+          1. <i>Chem. Sci.</i>, <b>2023</b>, 14, 11381–11388.<br />
+        </p>
+        <h4>C–C bond formation</h4>
+        <p>
+          The ability to form C–C bonds is central to the synthesis of a wide
+          range of organic compounds, including pharmaceuticals, agrochemicals
+          and natural products, allowing chemists to construct complex molecules
+          from simpler starting materials. Achieving control over where the bond
+          forms on a molecule (regioselectivity) is crucial, especially for
+          molecules with multiple reactivity sites. Coupled with these
+          challenges, desirable catalysts need to be cheap and sustainable. In
+          collaboration with experimentalists, we focus on the mechanistic
+          elucidation of Fe-catalysed conjunctive cross-coupling reactions
+          (Figure Top), which brings multiple components together to form
+          complex molecules under Fe catalysis. Due to the variable spin states
+          of Fe (high spin vs low spin) and the potential involvement of Fe in
+          different oxidation states (Fe(I), Fe(II), Fe(III)), using only
+          experimental techniques may not be sufficient to fully understand the
+          catalytic cycle. We employ DFT calculations to understand the
+          mechanism of such complex transformations (Figure Bottom).
+          <figure>
+            <a href="images/research/iron_catalysis.jpeg" target="_blank"
+              ><img
+                src="images/research/iron_catalysis.jpeg"
+                width="800"
+                align="center"
+            /></a>
+            <br />
+            <a href="images/research/iron_pes.jpeg" target="_blank"
+              ><img
+                src="images/research/iron_pes.jpeg"
+                width="850"
+                align="center"
+            /></a>
+            <figurecaption>
+              <p>
+                Top: Fe-catalysed multicomponent conjunctive C–C cross-coupling
+                reactions. Bottom: Computed Gibbs energy profile for
+                iron-catalysed conjunctive alkylation. Levels of theory:
+                SMD(THF)-UB3LYP-D3BJ(UMN15)/def2-TZVP//UB3LYP-D3BJ/def2-SVP.
+                Superscripts in front of energy values denote the spin state of
+                the species.
+              </p></figurecaption
+            >
+          </figure>
+        </p>
+
+        <font size="3"
+          ><strong> <u>References:</u></strong></font
+        ><br />
+        <b>Iron catalysts:</b>
+        <p>
+          1. <i>Nat. Catal.</i>, <b>2024</b>, 7, 321–329.<br />
+          2. <i>Nat. Synth.</i>, <b>2024</b>,
+          https://doi.org/10.1038/s44160-024-00658-7. <br />
         </p>
 
         <h3>Organocatalysis and asymmetric catalysis</h3>
@@ -205,6 +272,73 @@
             </p>
           </figurecaption>
         </figure>
+
+        <p>
+          Chiral NHC carbenes have been employed as organocatalysts to effect
+          stereo- and enantioinduction via acyl azolium intermediates, which, due
+          to the chirality imparted by the chiral carbene, may be attacked
+          selectively by nucleophile from either the <i>Re</i>- or the
+          <i>Si</i>-face of the carbonyl group (e.g., attack by hydroxyl group of monosaccharides). </p>
+                    <figure>
+                            <a href="images/research/sugar.jpeg" target="_blank"
+            ><img src="images/research/sugar.jpeg" width="860" align="center"
+          /></a>
+          <figurecaption>
+            <p>
+              Computational studies of model reactions on regioselective acylation of OH groups of monosaccharides. The regioselectivity control on monosaccharides of varying stereochemistry by different combinations of boronic acid and carbene was explored.
+            </p>
+          </figurecaption>
+          </figure>
+                        
+        <p>
+            The chiral carbene catalysts may also be involved in the formation of chiral intermediates with biased sterics and electronics, which allows it to enantioselectively attack one face of a prochiral substrate rather than another. For example, in the reaction below, chiral carbene forms aza-Breslow intermediate which can be oxidized to triaza-diene intermediate that attacks the <i>Si</i>-face, instead of the <i>Re</i>-face, of of the isatin substrate.</p>
+          
+            <figure>
+          <a href="images/research/chiral_carbene.jpeg" target="_blank"
+            ><img src="images/research/chiral_carbene.jpeg" width="860" align="center"
+          /></a>
+          <figurecaption>
+            <p>
+              Gibbs energy profile for the enantioselective attack on isatin by carbene-formed intermediate and the transition state structures.
+            </p>
+          </figurecaption>
+        </figure>
+            
+          <p>For accurate prediction of the selectivity step, we need to perform detailed conformational sampling (and Boltzmann weighting of all TS conformers of competing pathways, if the conformers are very close in energy), as the wrong use of conformers may lead to wrong predictions as shown in the figure below. We usually perform CREST conformational sampling on located TS structures with constraints on key reacting bonds and, depending on the size of the system, use 5-20 lowest xTB energy structures for further TS optimisation under DFT refinement. </p>
+                        <figure>
+          <a href="images/research/conformational_sampling.jpg" target="_blank"
+            ><img src="images/research/conformational_sampling.jpg" width="860" align="center"
+          /></a>
+          <figurecaption>
+            <p>
+              Challenge of conformational sampling for the accurate prediction of selectivity. The use of non-lowest-energy TS structures may lead to wrong selectivity ratio prediction or even to the opposite selectivity prediction!
+            </p>
+          </figurecaption>
+        </figure>
+          
+          <font size="3"
+          ><strong> <u>References:</u></strong></font
+        ><br />
+        <b>Organocarbene:</b>
+        <p>
+          1. <i>Angew. Chem. Int. Ed.</i>, <b>2021</b>,
+                60, 7906–7912.<br />
+          2. <i>Org. Chem. Front.</i>, <b>2021</b>, 8, 2413–2419. <br />
+          3. <i>Nat. Commun.</i>,
+                <b>2022</b>, 13, 36.<br />
+          4. <i>J. Am. Chem. Soc.</i>, <b>2022</b>, 144, 12, 5441–5449. <br />
+          5. <i>Chem</i>,
+                <b>2022</b>, 8, 1518–1534.<br />
+          6. <i>Angew. Chem. Int. Ed.</i> <b>2023</b>, 62,
+                e202211977. <br />
+            7. <i>Angew. Chem. Int. Ed.</i>, <b>2024</b>, 63, e202404979. <br/>
+            8. <i>J. Am. Chem. Soc.</i>, <b>2024</b>, 146, 36, 25350–25360. <br/>
+
+          <b>Chiral phosphoric acid:</b> <br />
+          1. <i>Angew. Chem. Int. Ed.</i> <b>2023</b>, 62, e202306864.<br />
+        </p>
+          
+<!--      TODO:  <h3>Radical chemistry and Photocatalysis</h3>-->
 
         <!--
         <h4>Chemical biology</h4>
