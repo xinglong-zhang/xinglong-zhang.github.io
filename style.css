@@ -155,12 +155,12 @@ figure img {
 
 .member-table th:nth-child(1),
 .member-table td:nth-child(1) {
-  width: 50%; /* Set width for the first column */
+  width: 40%; /* Set width for the first column */
 }
 
 .member-table th:nth-child(2),
 .member-table td:nth-child(2) {
-  width: 50%; /* Set width for the second column */
+  width: 60%; /* Set width for the second column */
 }
 
 .collaborator-table {
