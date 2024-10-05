@@ -109,13 +109,13 @@ figure img {
 .award-details {
   width: 100%;
   border-collapse: separate; /* Ensure border-spacing works */
-  border-spacing: 0 2px; /* Adjust the value as needed for row spacing */
+  border-spacing: 0 0.5px; /* Adjust the value as needed for row spacing */
 }
 
 .people-details {
   width: 100%;
   border-collapse: separate; /* Ensure border-spacing works */
-  border-spacing: 2px; /* Adjust the value as needed for row spacing */
+  border-spacing: 0.5px; /* Adjust the value as needed for row spacing */
 }
 
 .award-details th,
