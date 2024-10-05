@@ -168,12 +168,9 @@ figure img {
   width: 1000px;
 }
 
-.collaborator-table td,
-.collaborator-table th {
-  padding-top: 15px; /* Adjust the value as needed */
-  padding-bottom: 15px; /* Adjust the value as needed */
-  padding-left: 15px;
-  padding-right: 15px;
+.collaborator-table td {
+  padding-left: 10px; /* Optional: Add padding inside the cells */
+  width: 250px; /* Set a fixed width for all columns */
 }
 
 body {
