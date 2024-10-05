@@ -165,7 +165,15 @@ figure img {
 
 .collaborator-table {
   padding-left: 10px;
-    width:1000px;
+  width: 1000px;
+}
+
+.collaborator-table td,
+.collaborator-table th {
+  padding-top: 15px; /* Adjust the value as needed */
+  padding-bottom: 15px; /* Adjust the value as needed */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 body {
