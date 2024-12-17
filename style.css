@@ -67,7 +67,8 @@ figure img {
   vertical-align: top; /* Align content to the top of each cell */
   padding: 10px; /* Add padding to cells */
   text-align: justify;
-  font-size: 12pt;
+  font-size: 1.1em;
+  color: black;
 }
 
 .publication-image {
@@ -148,7 +149,7 @@ figure img {
 }
 
 .collaborator-table {
-  padding-left: 10px;
+  padding-left: 70px;
   width: 1000px;
 }
 
@@ -182,7 +183,6 @@ h2,
 h3,
 h4 {
   font-weight: normal;
-  letter-spacing: 0px;
 }
 
 h2 {
@@ -193,7 +193,7 @@ h2 {
 h3 {
   color: brown;
   margin-bottom: 0.2em;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .h3-text {
@@ -278,7 +278,8 @@ ul h4 {
   width: 860px;
   float: left;
   text-align: justify;
-  font-size: 12pt;
+  font-size: 1.1em;
+  color: black;
 }
 
 #content-box1 {
