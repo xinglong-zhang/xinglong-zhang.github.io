@@ -63,7 +63,7 @@ figure img {
 }
 
 .publication-details {
-  width: 85%; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
   vertical-align: top; /* Align content to the top of each cell */
   padding: 10px; /* Add padding to cells */
   text-align: justify;
@@ -71,7 +71,7 @@ figure img {
 }
 
 .publication-image {
-  width: 20%; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
   vertical-align: middle;
   border-spacing: inherit;
 }
@@ -82,6 +82,79 @@ figure img {
   display: inline-block; /* Display the image as inline-block to center it */
   vertical-align: middle; /* Align the image vertically middle within the inline-block */
   margin-top: 12px; /* Add spacing on top of the image */
+}
+
+#people-content {
+  width: 1050px;
+  float: left;
+  text-align: justify;
+  font-size: 12pt;
+}
+.people-table {
+  border-collapse: separate; /* Use separate border-collapse */
+  border-spacing: 0 10px; /* Adjust spacing as needed */
+  width: 100%;
+}
+
+.people-table th:nth-child(1),
+.people-table td:nth-child(1) {
+  width: 30%; /* Set width for the first column */
+}
+
+.people-table th:nth-child(2),
+.people-table td:nth-child(2) {
+  width: 70%; /* Set width for the second column */
+}
+
+.award-details {
+  width: 100%;
+  border-collapse: separate; /* Ensure border-spacing works */
+  border-spacing: 0 0.5px; /* Adjust the value as needed for row spacing */
+}
+
+.people-details {
+  width: 100%;
+  border-collapse: separate; /* Ensure border-spacing works */
+  border-spacing: 0.5px; /* Adjust the value as needed for row spacing */
+}
+
+.award-details th,
+.award-details td,
+.people-details th,
+.people-details td {
+  padding: 2px; /* Optional: Add padding for cells */
+}
+
+.people-details td:nth-child(1) {
+  width: 20%; /* Set width for the first column */
+}
+
+.people-details td:nth-child(2) {
+  width: 35%; /* Set width for the second column */
+}
+
+.people-details td:nth-child(3) {
+  width: 45%; /* Set width for the third column */
+}
+
+.award-details th:nth-child(1) {
+  width: 100%; /* Set width for the first column */
+}
+.award-details td:nth-child(1) {
+  width: 12%; /* Set width for the first column */
+}
+.award-details td:nth-child(2) {
+  width: 88%; /* Set width for the second column */
+}
+
+.collaborator-table {
+  padding-left: 10px;
+  width: 1000px;
+}
+
+.collaborator-table td {
+  padding-left: 10px; /* Optional: Add padding inside the cells */
+  width: 250px; /* Set a fixed width for all columns */
 }
 
 body {
@@ -109,7 +182,7 @@ h2,
 h3,
 h4 {
   font-weight: normal;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 h2 {
@@ -123,15 +196,31 @@ h3 {
   font-size: 1.5em;
 }
 
+.h3-text {
+  text-align: center;
+  color: darkblue;
+}
+
 h4 {
   color: brown;
   font-size: 1.2em;
 }
+.h4-text {
+  color: black;
+  text-align: left;
+}
 
 h5 {
   letter-spacing: 0pt;
-  font-size: 0.5em;
+  font-size: 1em;
   color: teal;
+}
+
+h6 {
+  letter-spacing: 0pt;
+  font-size: 0.95em;
+  font-weight: normal;
+  color: black;
 }
 
 img.alignleft {
@@ -221,17 +310,22 @@ ul h4 {
 }
 
 #header {
-  margin: auto 20px;
+  margin: auto 40px;
   height: 305px;
+  width: 1050px;
   position: relative;
-  background: white url(images/newc1.jpg) left no-repeat;
-  background-size: 770px;
+  background-color: white;
   padding-right: 0px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 0px;
   padding-left: 0px;
   color: #ffffff;
-  width: 1020px;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  /*  object-fit: cover;  Scale image while maintaining aspect ratio */
 }
 
 #logo {
@@ -251,6 +345,19 @@ ul h4 {
 
 #logo h1 {
   font-size: 3.25em;
+}
+
+/*XZ*/
+
+#myColor {
+  color: crimson;
+}
+
+#myList {
+  padding: 10px 20px 40px 60px;
+  position: horizontal;
+  margin: 10;
+  font-size: 20;
 }
 
 #slogan {
@@ -274,7 +381,7 @@ ul h4 {
   background: #209d9d url(images/img02.gif) repeat-x top left;
   margin: 10;
   height: 50px;
-  width: 1020px;
+  width: 1080px;
   border-left: #1c7575;
   border-right: #1c7575;
   border-top: solid 1px #1c7575;
@@ -287,7 +394,7 @@ ul h4 {
   list-style: none;
   padding-top: 30px;
   position: horizontal;
-  left: -15px;
+  left: 15px;
 }
 
 #menu ul li {
@@ -302,6 +409,7 @@ ul h4 {
   color: #ffffff;
   letter-spacing: 0px;
   font-size: 1.25em;
+  margin-right: 20px;
 }
 
 #menu ul li span b {
@@ -536,7 +644,7 @@ ul h4 {
   background: white;
   margin: 10;
   height: 50px;
-  width: 890px;
+  width: 1000px;
   border-top: solid 4px #5ad7d7;
   border-bottom: solid 4px #5ad7d7;
   border-spacing: 10px 0;
@@ -562,12 +670,41 @@ div.container {
 }
 
 td {
-  width: 150px;
+  width: 950px;
   text-align: center;
-  padding: 7px;
+  padding: 10px;
 }
 
 mark.blue {
-  color: cornflowerblue;
+  color: blue;
   background: none;
+}
+
+mark.red {
+  color: red;
+  background: none;
+}
+
+mark.orange {
+  color: orange;
+  background: none;
+}
+
+mark.coral {
+  color: coral;
+  background: none;
+}
+
+mark.crimson {
+  color: crimson;
+  background: none;
+}
+
+.text-box {
+  border: 2px solid #000; /* Border around the box */
+  padding: 20px; /* Space inside the box */
+  margin: 20px; /* Space outside the box */
+  background-color: #f9f9f9; /* Background color of the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
 }

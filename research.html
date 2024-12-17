@@ -1,5 +1,10 @@
 <html lang="en">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- character set. this is a comment -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- link to the style css sheet-->
+    <title>Research | Zhang Lab @ The Chinese University of Hong Kong</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -14,12 +19,6 @@
 
       gtag("config", "UA-108098763-1");
     </script>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- character set. this is a comment -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- link to the style css sheet-->
-    <title>Research | Xinglong Zhang</title>
   </head>
 
   <body>
@@ -28,22 +27,31 @@
       <div class="header"></div>
     </header>
 
+    <div id="header" align="right">
+      <img
+        class="header-image"
+        src="images/research.png"
+        alt="Research covers"
+      />
+    </div>
+
     <div id="menu">
-      <a href="index.html"><font color="#FFC433">About</font></a
-      >&nbsp;
-      <a href="research.html"
-        ><font color="#FFC433">Research & Teaching</font></a
-      >&nbsp;
-      <a href="collaborators.html"><font color="#FFC433">Collaborators</font></a
+      <a href="index.html"><font color="#FFC433">Home</font></a
+      >&nbsp; <a href="people.html"><font color="#FFC433">People</font></a
+      >&nbsp; <a href="research.html"><font color="#FFC433">Research</font></a
       >&nbsp;
       <a href="publications.html"><font color="#FFC433">Publications</font></a
       >&nbsp;
-      <a href="skills.html"><font color="#FFC433">Qualifications</font></a
+      <!--            <a href="collaborators.html"><font color=#FFC433>Collaborators</font></a>&nbsp;-->
+      <a href="teaching.html"><font color="#FFC433">Teaching</font></a
       >&nbsp;
       <!--<a href="rejections.html"><font color=#FFC433>Rejections</font></a>-->
-      <a href="resources.html"><font color="#FFC433">Resources</font></a
+      <a href="gallery.html"><font color="#FFC433">Gallery</font></a
+      >&nbsp; <a href="resources.html"><font color="#FFC433">Resources</font></a
+      >&nbsp; <a href="openings.html"><font color="#FFC433">Openings</font></a
+      >&nbsp; <a href="blog.html"><font color="#FFC433">Blog</font></a
       >&nbsp;
-      <a href="zh/index.html"><font color="#FFC433">中文</font></a>
+      <!--      <a href="zh/index.html"><font color="#FFC433">中文</font></a>-->
     </div>
 
     <div class="paddingleft" id="content">
@@ -73,7 +81,7 @@
       <br />
       <ol>
         <h2><li>Computational Homogenous Catalysis&nbsp;</li></h2>
-        <h3>Organometallic catalysis</h3>
+        <h3>1.1 Organometallic catalysis</h3>
         <h4>C–H functionalisation</h4>
         <p>
           Transition metal (TM) catalysed C–H functionalisations present many
@@ -165,8 +173,77 @@
           form styrenyl product is way larger than forming allyl products (note
           the different energy scales).
         </p>
+        <font size="3"
+          ><strong> <u>References:</u></strong></font
+        ><br />
+        <b>Palladium catalysts:</b>
+        <p>
+          1. <i>Angew. Chem. Int. Ed.</i>, <b>2019</b>, 58, 5633–5638.<br />
+          2. <i>Angew. Chem. Int. Ed.</i>, <b>2019</b>, 58, 10353–10360. <br />
+          3. <i>J. Am. Chem. Soc.</i>, <b>2020</b>, 142, 8, 3762–3774.<br />
+          4. <i>J. Am. Chem. Soc.</i> <b>2022</b>, 144, 27, 12032–12042. <br />
+          5. <i>Nat. Chem.</i>, <b>2023</b>, 15, 1626–1635.<br />
+          6. <i>ACS Catal.</i>, <b>2023</b>, 13, 21, 14000–14011. <br />
 
-        <h3>Organocatalysis catalysis</h3>
+          <b>Rhodium catalysts:</b> <br />
+          1. <i>Chem. Sci.</i>, <b>2023</b>, 14, 11381–11388.<br />
+        </p>
+        <h4>C–C bond formation</h4>
+        <p>
+          The ability to form C–C bonds is central to the synthesis of a wide
+          range of organic compounds, including pharmaceuticals, agrochemicals
+          and natural products, allowing chemists to construct complex molecules
+          from simpler starting materials. Achieving control over where the bond
+          forms on a molecule (regioselectivity) is crucial, especially for
+          molecules with multiple reactivity sites. Coupled with these
+          challenges, desirable catalysts need to be cheap and sustainable. In
+          collaboration with experimentalists, we focus on the mechanistic
+          elucidation of Fe-catalysed conjunctive cross-coupling reactions
+          (Figure Top), which brings multiple components together to form
+          complex molecules under Fe catalysis. Due to the variable spin states
+          of Fe (high spin vs low spin) and the potential involvement of Fe in
+          different oxidation states (Fe(I), Fe(II), Fe(III)), using only
+          experimental techniques may not be sufficient to fully understand the
+          catalytic cycle. We employ DFT calculations to understand the
+          mechanism of such complex transformations (Figure Bottom).
+          <figure>
+            <a href="images/research/iron_catalysis.jpeg" target="_blank"
+              ><img
+                src="images/research/iron_catalysis.jpeg"
+                width="800"
+                align="center"
+            /></a>
+            <br />
+            <a href="images/research/iron_pes.jpeg" target="_blank"
+              ><img
+                src="images/research/iron_pes.jpeg"
+                width="850"
+                align="center"
+            /></a>
+            <figurecaption>
+              <p>
+                Top: Fe-catalysed multicomponent conjunctive C–C cross-coupling
+                reactions. Bottom: Computed Gibbs energy profile for
+                iron-catalysed conjunctive alkylation. Levels of theory:
+                SMD(THF)-UB3LYP-D3BJ(UMN15)/def2-TZVP//UB3LYP-D3BJ/def2-SVP.
+                Superscripts in front of energy values denote the spin state of
+                the species.
+              </p></figurecaption
+            >
+          </figure>
+        </p>
+
+        <font size="3"
+          ><strong> <u>References:</u></strong></font
+        ><br />
+        <b>Iron catalysts:</b>
+        <p>
+          1. <i>Nat. Catal.</i>, <b>2024</b>, 7, 321–329.<br />
+          2. <i>Nat. Synth.</i>, <b>2024</b>,
+          https://doi.org/10.1038/s44160-024-00658-7. <br />
+        </p>
+
+        <h3>1.2 Organocatalysis and asymmetric catalysis</h3>
         <h4>N-heterocyclic carbene (NHC) catalysis</h4>
 
         <p>
@@ -196,6 +273,101 @@
           </figurecaption>
         </figure>
 
+        <p>
+          Chiral NHC carbenes have been employed as organocatalysts to effect
+          stereo- and enantioinduction via acyl azolium intermediates, which,
+          due to the chirality imparted by the chiral carbene, may be attacked
+          selectively by nucleophile from either the <i>Re</i>- or the
+          <i>Si</i>-face of the carbonyl group (e.g., attack by hydroxyl group
+          of monosaccharides).
+        </p>
+        <figure>
+          <a href="images/research/sugar.jpeg" target="_blank"
+            ><img src="images/research/sugar.jpeg" width="860" align="center"
+          /></a>
+          <figurecaption>
+            <p>
+              Computational studies of model reactions on regioselective
+              acylation of OH groups of monosaccharides. The regioselectivity
+              control on monosaccharides of varying stereochemistry by different
+              combinations of boronic acid and carbene was explored.
+            </p>
+          </figurecaption>
+        </figure>
+
+        <p>
+          The chiral carbene catalysts may also be involved in the formation of
+          chiral intermediates with biased sterics and electronics, which allows
+          it to enantioselectively attack one face of a prochiral substrate
+          rather than another. For example, in the reaction below, chiral
+          carbene forms aza-Breslow intermediate which can be oxidized to
+          triaza-diene intermediate that attacks the <i>Si</i>-face, instead of
+          the <i>Re</i>-face, of of the isatin substrate.
+        </p>
+
+        <figure>
+          <a href="images/research/chiral_carbene.jpeg" target="_blank"
+            ><img
+              src="images/research/chiral_carbene.jpeg"
+              width="860"
+              align="center"
+          /></a>
+          <figurecaption>
+            <p>
+              Gibbs energy profile for the enantioselective attack on isatin by
+              carbene-formed intermediate and the transition state structures.
+            </p>
+          </figurecaption>
+        </figure>
+
+        <p>
+          For accurate prediction of the selectivity step, we need to perform
+          detailed conformational sampling (and Boltzmann weighting of all TS
+          conformers of competing pathways, if the conformers are very close in
+          energy), as the wrong use of conformers may lead to wrong predictions
+          as shown in the figure below. We usually perform CREST conformational
+          sampling on located TS structures with constraints on key reacting
+          bonds and, depending on the size of the system, use 5-20 lowest xTB
+          energy structures for further TS optimisation under DFT refinement.
+        </p>
+        <figure>
+          <a href="images/research/conformational_sampling.jpg" target="_blank"
+            ><img
+              src="images/research/conformational_sampling.jpg"
+              width="860"
+              align="center"
+          /></a>
+          <figurecaption>
+            <p>
+              Challenge of conformational sampling for the accurate prediction
+              of selectivity. The use of non-lowest-energy TS structures may
+              lead to wrong selectivity ratio prediction (a) or even to the
+              opposite selectivity prediction (b)!
+            </p>
+          </figurecaption>
+        </figure>
+
+        <font size="3"
+          ><strong> <u>References:</u></strong></font
+        ><br />
+        <b>Organocarbene:</b>
+        <p>
+          1. <i>Angew. Chem. Int. Ed.</i>, <b>2021</b>, 60, 7906–7912.<br />
+          2. <i>Org. Chem. Front.</i>, <b>2021</b>, 8, 2413–2419. <br />
+          3. <i>Nat. Commun.</i>, <b>2022</b>, 13, 36.<br />
+          4. <i>J. Am. Chem. Soc.</i>, <b>2022</b>, 144, 12, 5441–5449. <br />
+          5. <i>Chem</i>, <b>2022</b>, 8, 1518–1534.<br />
+          6. <i>Angew. Chem. Int. Ed.</i> <b>2023</b>, 62, e202211977. <br />
+          7. <i>Angew. Chem. Int. Ed.</i>, <b>2024</b>, 63, e202404979. <br />
+          8. <i>J. Am. Chem. Soc.</i>, <b>2024</b>, 146, 36, 25350–25360. <br />
+
+          <b>Chiral phosphoric acid:</b> <br />
+          1. <i>Angew. Chem. Int. Ed.</i> <b>2023</b>, 62, e202306864.<br />
+        </p>
+
+        <!--      TODO:  <h3>Radical chemistry and Photocatalysis</h3>-->
+
+        <!--
         <h4>Chemical biology</h4>
         <p>
           We are also able to computationally model chemical reactions within a
@@ -228,6 +400,7 @@
           </figure>
         </p>
         <br />
+-->
 
         <h2><li>Machine Learning for Chemistry&nbsp;</li></h2>
 
@@ -271,188 +444,54 @@
           carried out at DFT-level accuracy within affordable costs.
         </p>
       </ol>
-
-      <p>&nbsp;</p>
-      <h1 id="Experiences">Research and Work Experiences</h1>
-      <br />
-      <li>
-        Research Student,
-        <a target="_blank" href="http://www.chm.bris.ac.uk/ccc/">
-          Centre for Computational Chemistry</a
-        >, University of Bristol (Mar 2016 - Apr 2016)
-      </li>
-
-      <li>
-        Lab Officer,
-        <a target="_blank" href="http://www.ibn.a-star.edu.sg/"
-          >Institute of Bioengineering and Nanotechnology</a
-        >, A*STAR, Singapore (Jul 2015 - Jul 2016)
-      </li>
-
-      <li>
-        Research Intern,
-        <a target="_blank" href="https://www.a-star.edu.sg/imb"
-          >Institute of Medical Biology</a
-        >, A*STAR, Singapore (Jul 2012 - Aug 2012)
-      </li>
-
-      <li>
-        National Service Full-time,
-        <a
-          target="_blank"
-          href="https://en.wikipedia.org/wiki/Singapore_Armed_Forces"
-        >
-          Singapore Armed Forces </a
-        >, Singapore (Jan 2009 - Nov 2010)
-      </li>
-
-      <li>
-        Research Intern, Institute of Bioengineering and Nanotechnology, A*STAR,
-        Singapore (Dec 2008 - Jan 2009)
-      </li>
-
-      <li>
-        Research Student,
-        <a target="_blank" href="http://www.nie.edu.sg/"
-          >National Institute of Education</a
-        >, Nanyang Technological University, Singapore (Nov 2005 - Nov 2005)
-      </li>
-
-      <p>&nbsp;</p>
-      <h1 id="Experiences">Teaching Experiences</h1>
-      <br />
-
-      <li>
-        Stipendiary Lecturer in
-        <a target="_blank" href="docs/physchem_y12.pdf">
-          Physical Chemistry (Years 1 and 2)</a
-        >, Exeter College, University of Oxford, 2017-2019
-      </li>
-
-      <li>
-        Physical and Theoretical Chemistry Laboratory Junior Demonstrator,
-        Department of Chemistry, University of Oxford, 2016-2017
-      </li>
-
-      <li>
-        Class tutor for year 1 undergraduate course Physics for Chemists,
-        Department of Chemistry, University of Oxford, 2016-2017
-      </li>
-
-      <!-- -->
-      <li>
-        Personal Tutor Part-time, tutoring A level Maths, Biology and Chemistry
-        and O level Maths and Sciences,
-        <!-- <a target="_blank" href="https://sites.google.com/site/xcelacademysg/">XceL Academy</a>,-->
-        Singapore (Jan 2010 - Sep 2011)
-        <!--  (Check out my testimonials <a target="_blank" href="https://sites.google.com/site/xcelacademysg/testimonials">here</a> and my tutor profile <a target="_blank" href="http://startutor.sg/21279">here</a> ) </li> 
-            -->
-
-        <p>&nbsp;</p>
-        <h1 id="Experiences">Professional Service</h1>
-        <br />
-      </li>
-
-      <li>Ad-hoc Peer Reviewer, Nature Chemistry, Nature Publishing Group</li>
-      <li>
-        Ad-hoc Peer Reviewer, The Journal of Organic Chemistry (JOC), ACS
-        Publications
-      </li>
-      <li>
-        Ad-hoc Peer Reviewer, The Journal of the American Chemical Society
-        (JACS), ACS Publications
-      </li>
-      <li>Ad-hoc Peer Reviewer, ACS Omega, ACS Publications</li>
-      <li>
-        Ad-hoc Review Editor, Theoretical and Computational Chemistry, Frontiers
-        in Chemistry
-      </li>
     </div>
 
     <table id="table">
       <tbody>
         <tr>
           <td>
-            <a target="_blank" href="mailto:zhang_xinglong@ihpc.a-star.edu.sg">
-              <img src="images/email.png" align="center" height="75" />
-            </a>
-          </td>
-
-          <td>
-            <a target="_blank" href="https://www.linkedin.com/in/xinglongzhang">
-              <img src="images/linkedin.png" align="center" height="75" />
-            </a>
-          </td>
-
-          <td>
-            <a target="_blank" href="https://twitter.com/XZhangChem">
-              <img src="images/twitter.png" align="center" height="75" />
-            </a>
+            <h3>Contact</h3>
+            <h6>
+              Run Run Shaw Science Building,
+              <br />
+              The Chinese University of Hong Kong,
+              <br />
+              Shatin, N.T., Hong Kong
+            </h6>
+            <h4>xinglong.zhang@cuhk.edu.hk</h4>
           </td>
 
           <td>
             <a
               target="_blank"
-              href="https://academictree.org/chemistry/tree.php?pid=685436"
+              href="https://www.cuhk.edu.hk/english/index.html"
             >
-              <img src="images/academic_tree.jpeg" align="left" height="95" />
+              <img src="images/cuhk_logo.png" align="center" height="120" />
             </a>
           </td>
 
           <td>
-            <a
-              target="_blank"
-              href="https://scholar.google.co.uk/citations?hl=en&user=3XhNj60AAAAJ"
-            >
-              <img src="images/google_scholar.png" align="center" height="75" />
+            <a target="_blank" href="https://chem.cuhk.edu.hk/">
+              <img src="images/cuhk_chem.webp" align="center" height="130" />
             </a>
           </td>
-
-          <td>
-            <a target="_blank" href="https://orcid.org/0000-0003-1698-692X">
-              <img src="images/orcid.png" align="center" height="85" />
-            </a>
-          </td>
-
-          <td>
-            <a
-              target="_blank"
-              href="https://www.webofscience.com/wos/author/record/GQB-2944-2022"
-            >
-              <img src="images/publons.png" align="center" height="75" />
-            </a>
-          </td>
-
-          <!-- <td >         
-    <td width="60">
-        <a target="_blank" href="https://www.a-star.edu.sg/">
-            <img src="images/astar.png" height=90>
-        </a>
-    </td>
-
-        <a target="_blank" href="https://www.yishuntownsec.moe.edu.sg/">
-            <img src="images/ytss.jpg" height=84>
-        </a>
-    </td>
-            
-    <td >
-        <a target="_blank" href="https://nationaljc.moe.edu.sg/">
-            <img src="images/njc.jpg" height=78>
-        </a>
-    </td>
-  
-    <td >
-        <a target="_blank" href="https://www.cam.ac.uk/">
-            <img src="images/cambridge.png" height=74>
-        </a>
-    </td>
-                   -->
         </tr>
       </tbody>
     </table>
 
     <footer>
-      <p align="center">&copy;2016 - 2023 Xinglong Zhang</p>
+      <p align="center">
+        <a href="https://www.free-counters.org/">free HitCounter</a>
+        <script
+          type="text/javascript"
+          src="https://www.freevisitorcounters.com/auth.php?id=6cb5618195c41ad8fac718e41c1ba75f969a967a"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://www.freevisitorcounters.com/en/home/counter/1170320/t/7"
+        ></script>
+      </p>
+      <p align="center">&copy;2024 Xinglong Zhang</p>
       <p>&nbsp;</p>
     </footer>
   </body>
