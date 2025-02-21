@@ -165,7 +165,7 @@ figure img {
 }
 
 body {
-  font-size: 18px; /* 12pt = 16px */
+  font-size: 18px;
   color: #5c5b5b;
   line-height: 28px; /* 1.75em ≈ 28px with base 16px */
   !background: url(images/dreaming2.jpg) repeat-x bottom center;
@@ -423,7 +423,7 @@ ul h4 {
   border-top: solid 1px #1c7575;
   border-bottom: solid 1px #1c7575;
   text-shadow: 0 1px 1px #007d7d;
-  font-size: 28px; /* font size in the menu
+  font-size: 28px; /* font size in the menu */
 }
 
 #menu ul {
