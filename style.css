@@ -41,14 +41,14 @@ figure img {
 .padding {
   position: absolute;
   height: 500px;
-  padding-right: 0px;
+  padding-right: 0cm;
 }
 .paddingleft {
-  padding-left: 30px; /* 3cm ≈ 113px, rounded to 30px for practicality */
+  padding-left: 3cm;
 }
 
 .caption p {
-  font-size: 160px; /* 10em ≈ 160px with base 16px */
+  font-size: 10em;
 }
 
 /* Adjust the width and margin as needed */
@@ -67,7 +67,7 @@ figure img {
   vertical-align: top; /* Align content to the top of each cell */
   padding: 10px; /* Add padding to cells */
   text-align: justify;
-  font-size: 18px; /* 1.1em ≈ 17.6px, rounded to 18px */
+  font-size: 1.1em;
   color: black;
 }
 
@@ -89,7 +89,7 @@ figure img {
   width: 1050px;
   float: left;
   text-align: justify;
-  font-size: 16px; /* 12pt = 16px */
+  font-size: 12pt;
 }
 .people-table {
   border-collapse: separate; /* Use separate border-collapse */
@@ -110,13 +110,13 @@ figure img {
 .award-details {
   width: 100%;
   border-collapse: separate; /* Ensure border-spacing works */
-  border-spacing: 0 1px; /* 0.5px rounded to 1px */
+  border-spacing: 0 0.5px; /* Adjust the value as needed for row spacing */
 }
 
 .people-details {
   width: 100%;
   border-collapse: separate; /* Ensure border-spacing works */
-  border-spacing: 1px; /* 0.5px rounded to 1px */
+  border-spacing: 0.5px; /* Adjust the value as needed for row spacing */
 }
 
 .award-details th,
@@ -159,9 +159,9 @@ figure img {
 }
 
 body {
-  font-size: 16px; /* 12pt = 16px */
+  font-size: 12pt;
   color: #5c5b5b;
-  line-height: 28px; /* 1.75em ≈ 28px with base 16px */
+  line-height: 1.75em;
   !background: url(images/dreaming2.jpg) repeat-x bottom center;
 }
 
@@ -186,14 +186,14 @@ h4 {
 }
 
 h2 {
-  font-size: 24px; /* 1.5em ≈ 24px with base 16px */
+  font-size: 1.5em;
   color: black;
 }
 
 h3 {
   color: brown;
-  margin-bottom: 3px; /* 0.2em ≈ 3.2px, rounded to 3px */
-  font-size: 21px; /* 1.3em ≈ 20.8px, rounded to 21px */
+  margin-bottom: 0.2em;
+  font-size: 1.3em;
 }
 
 .h3-text {
@@ -203,7 +203,7 @@ h3 {
 
 h4 {
   color: brown;
-  font-size: 19px; /* 1.2em ≈ 19.2px, rounded to 19px */
+  font-size: 1.2em;
 }
 .h4-text {
   color: black;
@@ -211,14 +211,14 @@ h4 {
 }
 
 h5 {
-  letter-spacing: 0px; /* 0pt = 0px */
-  font-size: 16px; /* 1em = 16px with base 16px */
+  letter-spacing: 0pt;
+  font-size: 1em;
   color: teal;
 }
 
 h6 {
-  letter-spacing: 0px; /* 0pt = 0px */
-  font-size: 15px; /* 0.95em ≈ 15.2px, rounded to 15px */
+  letter-spacing: 0pt;
+  font-size: 0.95em;
   font-weight: normal;
   color: black;
 }
@@ -249,20 +249,20 @@ img.pic {
 }
 
 p {
-  margin-bottom: 24px; /* 1.5em ≈ 24px with base 16px */
+  margin-bottom: 1.5em;
 }
 
 ul {
-  margin-bottom: 24px; /* 1.5em ≈ 24px with base 16px */
+  margin-bottom: 1.5em;
 }
 
 ul h4 {
-  margin-bottom: 6px; /* 0.35em ≈ 5.6px, rounded to 6px */
+  margin-bottom: 0.35em;
 }
 
 .box {
   overflow: hidden;
-  margin-bottom: 16px; /* 1em = 16px with base 16px */
+  margin-bottom: 1em;
 }
 
 .date {
@@ -270,7 +270,7 @@ ul h4 {
   padding: 5px 6px 5px 6px;
   margin: 0 6px 0 0;
   color: #ffffff;
-  font-size: 13px; /* 0.8em ≈ 12.8px, rounded to 13px */
+  font-size: 0.8em;
   border-radius: 2px;
 }
 
@@ -278,7 +278,7 @@ ul h4 {
   width: 860px;
   float: left;
   text-align: justify;
-  font-size: 18px; /* 1.1em ≈ 17.6px, rounded to 18px */
+  font-size: 1.1em;
   color: black;
 }
 
@@ -295,7 +295,7 @@ ul h4 {
 #content li {
   margin-bottom: 10px;
   letter-spacing: 0px;
-  font-size: 16px; /* 1em = 16px with base 16px */
+  font-size: 1em;
   line-height: 150%;
 }
 
@@ -345,7 +345,7 @@ ul h4 {
 }
 
 #logo h1 {
-  font-size: 52px; /* 3.25em ≈ 52px with base 16px */
+  font-size: 3.25em;
 }
 
 /*XZ*/
@@ -357,8 +357,8 @@ ul h4 {
 #myList {
   padding: 10px 20px 40px 60px;
   position: horizontal;
-  margin: 10px; /* Corrected from margin: 10 to margin: 10px */
-  font-size: 20px; /* Corrected from font-size: 20 to font-size: 20px */
+  margin: 10;
+  font-size: 20;
 }
 
 #slogan {
@@ -372,7 +372,7 @@ ul h4 {
 
 #slogan h2 {
   color: #bebebe;
-  font-size: 20px; /* 1.25em ≈ 20px with base 16px */
+  font-size: 1.25em;
   text-shadow: 0 1px 1px #3e3e3e;
 }
 
@@ -380,7 +380,7 @@ ul h4 {
   padding: 20px 20px 0px 20px;
   position: horizontal;
   background: #209d9d url(images/img02.gif) repeat-x top left;
-  margin: 10px; /* Corrected from margin: 10 to margin: 10px */
+  margin: 10;
   height: 50px;
   width: 1080px;
   border-left: #1c7575;
@@ -388,7 +388,7 @@ ul h4 {
   border-top: solid 1px #1c7575;
   border-bottom: solid 1px #1c7575;
   text-shadow: 0 1px 1px #007d7d;
-  font-size: 26px; /* Corrected from font-size: 26 to font-size: 26px */
+  font-size: 26;
 }
 
 #menu ul {
@@ -409,7 +409,7 @@ ul h4 {
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 0px;
-  font-size: 20px; /* 1.25em ≈ 20px with base 16px */
+  font-size: 1.25em;
   margin-right: 20px;
 }
 
@@ -572,7 +572,7 @@ ul h4 {
 }
 
 #search input.form-submit {
-  margin-left: 16px; /* 1em = 16px with base 16px */
+  margin-left: 1em;
   color: #ffffff;
   padding: 10px;
   background: #2facac;
@@ -643,7 +643,7 @@ ul h4 {
   padding: 1px 80px 1px 80px;
   position: center;
   background: white;
-  margin: 10px; /* Corrected from margin: 10 to margin: 10px */
+  margin: 10;
   height: 50px;
   width: 1000px;
   border-top: solid 4px #5ad7d7;
@@ -653,7 +653,7 @@ ul h4 {
 
 p.copyright {
   text-align: right;
-  font-size: 16px; /* 1em = 16px with base 16px */
+  font-size: 1em;
   padding-right: 170px;
 }
 
@@ -667,7 +667,7 @@ div.container {
 /* Set default styles for tab content */
 .tabcontent {
   color: black;
-  padding-left: 24px; /* 1.5em ≈ 24px with base 16px */
+  padding-left: 1.5em;
 }
 
 td {
