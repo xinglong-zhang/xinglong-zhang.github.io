@@ -44,7 +44,7 @@ figure img {
   padding-right: 0cm;
 }
 .paddingleft {
-  padding-left: 3cm;
+  padding-left: 120px;
 }
 
 .caption p {
@@ -54,8 +54,13 @@ figure img {
 /* Adjust the width and margin as needed */
 .publication-table {
   border-collapse: separate; /* Use separate border-collapse */
-  border-spacing: 0 30px; /* Adjust spacing as needed */
+  border-spacing: 0 20px; /* Adjust spacing as needed */
   width: 100%;
+  font-size: 18px;
+}
+
+.publication-table ol li {
+  font-size: 18px; /* Ensure list items inherit or match */
 }
 
 .publication-table td {
@@ -67,7 +72,7 @@ figure img {
   vertical-align: top; /* Align content to the top of each cell */
   padding: 10px; /* Add padding to cells */
   text-align: justify;
-  font-size: 1.1em;
+  font-size: 18px;
   color: black;
 }
 
@@ -108,22 +113,23 @@ figure img {
 }
 
 .award-details {
-  width: 100%;
+  width: 110%;
   border-collapse: separate; /* Ensure border-spacing works */
-  border-spacing: 0 0.5px; /* Adjust the value as needed for row spacing */
+  border-spacing: 0 0px;
+  text-justify: inter-word;
 }
 
 .people-details {
-  width: 100%;
+  width: 110%;
   border-collapse: separate; /* Ensure border-spacing works */
-  border-spacing: 0.5px; /* Adjust the value as needed for row spacing */
+  border-spacing: 0 0px;
 }
 
 .award-details th,
 .award-details td,
 .people-details th,
 .people-details td {
-  padding: 2px; /* Optional: Add padding for cells */
+  padding: 0px; /* Optional: Add padding for cells */
 }
 
 .people-details td:nth-child(1) {
@@ -159,7 +165,7 @@ figure img {
 }
 
 body {
-  font-size: 12pt;
+  font-size: 18px;
   color: #5c5b5b;
   line-height: 1.75em;
   !background: url(images/dreaming2.jpg) repeat-x bottom center;
@@ -192,8 +198,8 @@ h2 {
 
 h3 {
   color: brown;
-  margin-bottom: 0.2em;
-  font-size: 1.3em;
+  margin-bottom: 3px;
+  font-size: 22px;
 }
 
 .h3-text {
@@ -203,7 +209,7 @@ h3 {
 
 h4 {
   color: brown;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .h4-text {
   color: black;
@@ -278,7 +284,7 @@ ul h4 {
   width: 860px;
   float: left;
   text-align: justify;
-  font-size: 1.1em;
+  font-size: 18px;
   color: black;
 }
 
@@ -293,10 +299,35 @@ ul h4 {
 }
 
 #content li {
+  /* list inside content */
   margin-bottom: 10px;
   letter-spacing: 0px;
-  font-size: 1em;
+  font-size: 18px; /* 1em = 16px with base 16px */
   line-height: 150%;
+}
+
+#content .publication-table {
+  /* publication-table inside content */
+  font-size: 18px;
+}
+
+#content .publication-table li {
+  /* publication-table lists inside content */
+  font-size: 18px;
+}
+
+#content .publication-table ol {
+  /* publication-table lists inside content */
+  font-size: 18px;
+}
+
+#content .publication-table ol li {
+  /* publication-table lists inside content */
+  font-size: 18px;
+}
+
+#content .publication-details li {
+  padding-top: 18px;
 }
 
 #footer {
@@ -355,10 +386,14 @@ ul h4 {
 }
 
 #myList {
-  padding: 10px 20px 40px 60px;
-  position: horizontal;
-  margin: 10;
-  font-size: 20;
+  padding: 20px 20px 20px 20px;
+  position: relative; /* Fixed invalid "horizontal" to a valid value */
+  margin: 10px;
+  font-size: 20px;
+}
+
+#myList li {
+  font-size: 20px; /* Explicitly set for list items */
 }
 
 #slogan {
@@ -388,7 +423,7 @@ ul h4 {
   border-top: solid 1px #1c7575;
   border-bottom: solid 1px #1c7575;
   text-shadow: 0 1px 1px #007d7d;
-  font-size: 26;
+  font-size: 28px; /* font size in the menu
 }
 
 #menu ul {
