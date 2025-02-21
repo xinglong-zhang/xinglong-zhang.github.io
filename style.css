@@ -41,14 +41,14 @@ figure img {
 .padding {
   position: absolute;
   height: 500px;
-  padding-right: 0cm;
+  padding-right: 0px;
 }
 .paddingleft {
   padding-left: 120px;
 }
 
 .caption p {
-  font-size: 10em;
+  font-size: 160px; /* 10em ≈ 160px with base 16px */
 }
 
 /* Adjust the width and margin as needed */
@@ -94,7 +94,7 @@ figure img {
   width: 1050px;
   float: left;
   text-align: justify;
-  font-size: 12pt;
+  font-size: 16px; /* 12pt = 16px */
 }
 .people-table {
   border-collapse: separate; /* Use separate border-collapse */
@@ -167,7 +167,7 @@ figure img {
 body {
   font-size: 18px;
   color: #5c5b5b;
-  line-height: 1.75em;
+  line-height: 28px; /* 1.75em ≈ 28px with base 16px */
   !background: url(images/dreaming2.jpg) repeat-x bottom center;
 }
 
@@ -192,7 +192,7 @@ h4 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 24px; /* 1.5em ≈ 24px with base 16px */
   color: black;
 }
 
@@ -217,14 +217,14 @@ h4 {
 }
 
 h5 {
-  letter-spacing: 0pt;
-  font-size: 1em;
+  letter-spacing: 0px; /* 0pt = 0px */
+  font-size: 16px; /* 1em = 16px with base 16px */
   color: teal;
 }
 
 h6 {
-  letter-spacing: 0pt;
-  font-size: 0.95em;
+  letter-spacing: 0px; /* 0pt = 0px */
+  font-size: 15px; /* 0.95em ≈ 15.2px, rounded to 15px */
   font-weight: normal;
   color: black;
 }
@@ -255,20 +255,20 @@ img.pic {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 24px; /* 1.5em ≈ 24px with base 16px */
 }
 
 ul {
-  margin-bottom: 1.5em;
+  margin-bottom: 24px; /* 1.5em ≈ 24px with base 16px */
 }
 
 ul h4 {
-  margin-bottom: 0.35em;
+  margin-bottom: 6px; /* 0.35em ≈ 5.6px, rounded to 6px */
 }
 
 .box {
   overflow: hidden;
-  margin-bottom: 1em;
+  margin-bottom: 16px; /* 1em = 16px with base 16px */
 }
 
 .date {
@@ -276,7 +276,7 @@ ul h4 {
   padding: 5px 6px 5px 6px;
   margin: 0 6px 0 0;
   color: #ffffff;
-  font-size: 0.8em;
+  font-size: 13px; /* 0.8em ≈ 12.8px, rounded to 13px */
   border-radius: 2px;
 }
 
@@ -376,7 +376,7 @@ ul h4 {
 }
 
 #logo h1 {
-  font-size: 3.25em;
+  font-size: 52px; /* 3.25em ≈ 52px with base 16px */
 }
 
 /*XZ*/
@@ -407,7 +407,7 @@ ul h4 {
 
 #slogan h2 {
   color: #bebebe;
-  font-size: 1.25em;
+  font-size: 20px; /* 1.25em ≈ 20px with base 16px */
   text-shadow: 0 1px 1px #3e3e3e;
 }
 
@@ -415,7 +415,7 @@ ul h4 {
   padding: 20px 20px 0px 20px;
   position: horizontal;
   background: #209d9d url(images/img02.gif) repeat-x top left;
-  margin: 10;
+  margin: 10px; /* Corrected from margin: 10 to margin: 10px */
   height: 50px;
   width: 1080px;
   border-left: #1c7575;
@@ -444,7 +444,7 @@ ul h4 {
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 0px;
-  font-size: 1.25em;
+  font-size: 20px; /* 1.25em ≈ 20px with base 16px */
   margin-right: 20px;
 }
 
@@ -607,7 +607,7 @@ ul h4 {
 }
 
 #search input.form-submit {
-  margin-left: 1em;
+  margin-left: 16px; /* 1em = 16px with base 16px */
   color: #ffffff;
   padding: 10px;
   background: #2facac;
@@ -678,7 +678,7 @@ ul h4 {
   padding: 1px 80px 1px 80px;
   position: center;
   background: white;
-  margin: 10;
+  margin: 10px; /* Corrected from margin: 10 to margin: 10px */
   height: 50px;
   width: 1000px;
   border-top: solid 4px #5ad7d7;
@@ -688,7 +688,7 @@ ul h4 {
 
 p.copyright {
   text-align: right;
-  font-size: 1em;
+  font-size: 16px; /* 1em = 16px with base 16px */
   padding-right: 170px;
 }
 
@@ -702,7 +702,7 @@ div.container {
 /* Set default styles for tab content */
 .tabcontent {
   color: black;
-  padding-left: 1.5em;
+  padding-left: 24px; /* 1.5em ≈ 24px with base 16px */
 }
 
 td {
