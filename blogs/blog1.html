@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- character set. this is a comment -->
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <!-- link to the style css sheet-->
+    <title>Blog | Zhang Lab @ The Chinese University of Hong Kong</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-108098763-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-108098763-1");
+    </script>
+  </head>
+
+  <body>
+    <div class="container"></div>
+    <header>
+      <div class="header"></div>
+    </header>
+
+    <div id="header" align="right">
+      <img
+        class="header-image"
+        src="../images/cuhk_science.jpeg"
+        alt="CUHK Science Building"
+      />
+    </div>
+
+    <div id="menu">
+      <a href="../index.html"><font color="#FFC433">Home</font></a
+      >&nbsp; <a href="../people.html"><font color="#FFC433">People</font></a
+      >&nbsp;
+      <a href="../research.html"><font color="#FFC433">Research</font></a
+      >&nbsp;
+      <a href="../publications.html"
+        ><font color="#FFC433">Publications</font></a
+      >&nbsp;
+      <!--            <a href="collaborators.html"><font color=#FFC433>Collaborators</font></a>&nbsp;-->
+      <a href="../teaching.html"><font color="#FFC433">Teaching</font></a
+      >&nbsp;
+      <!--<a href="rejections.html"><font color=#FFC433>Rejections</font></a>-->
+      <a href="../gallery.html"><font color="#FFC433">Gallery</font></a
+      >&nbsp;
+      <a href="../resources.html"><font color="#FFC433">Resources</font></a
+      >&nbsp;
+      <a href="../openings.html"><font color="#FFC433">Openings</font></a
+      >&nbsp; <a href="../blog.html"><font color="#FFC433">Blog</font></a
+      >&nbsp;
+      <!--      <a href="zh/index.html"><font color="#FFC433">中文</font></a>-->
+    </div>
+
+    <div class="paddingleft" id="content">
+      <p>&nbsp;</p>
+
+      <h1 id="ResearchInterests">
+        Why are def2 basis sets preferred over Pople basis sets in quantum
+        chemistry?
+      </h1>
+      <p>&nbsp;</p>
+      <h2>Background of Basis Sets in Quantum Chemistry</h2>
+      <p>
+        Quantum chemistry is a field that bridges theoretical physics and
+        practical chemistry, enabling scientists to predict molecular
+        structures, energies, and properties. At the core of these computational
+        methods, whether it’s the Hartree-Fock (HF) approach, the widely-used
+        Density Functional Theory (DFT), or more advanced post-HF methods like
+        second-order Møller-Plesset perturbation theory (MP2), lies the concept
+        of the <em>basis set</em>. A basis set is essentially a set of functions
+        used to approximate the electronic wavefunctions (matrix mechanics
+        allowing computers to solve the Schr&ouml;dinger's Equation) that
+        describe how electrons behave in atoms and molecules.
+      </p>
+      <p>
+        These functions are typically Gaussian-type orbitals (GTOs), which are
+        bell-shaped curves centered on atomic nuclei. GTOs are favoured over the
+        more physically accurate Slater-type orbitals (STOs; with cusps for
+        electron density at atomic nuclei) because they’re computationally more
+        efficient to compute multicentre integrals (due to Gaussian Product
+        Theorem). Thus the evaluation of multicentre integrals are much faster
+        using GTOs. The quality of a basis set determines the accuracy of the
+        results. A small basis set might miss critical electronic details,
+        leading to errors in bond lengths or energies, while an overly large one
+        can bog down computations, making them impractical for all but the
+        simplest systems.
+      </p>
+
+      <h2>Comparing Pople and def2 Basis Sets</h2>
+      <p>
+        Over the decades, chemists have developed various basis set families to
+        strike a balance between cost and accuracy. Among the most famous are
+        the <strong>Pople basis sets</strong>, pioneered by Nobel laureate John
+        Pople in the 1970s and 1980s (e.g., 6-31G, 6-311G), which became a
+        standard for organic chemistry calculations. More recently, the
+        <strong>def2 basis sets</strong>, introduced by Florian Weigend and
+        Reinhart Ahlrichs,<sup class="citation">[1][2]</sup> have emerged as a
+        modern alternative. These sets — ranging from def2-SV(P) (split valence)
+        to def2-TZVP (triple zeta) and def2-QZVPP (quadruple zeta) — promise
+        improved performance across a wider range of elements and methods.
+      </p>
+
+      <p>
+        Pople basis sets have had a long history, offering simplicity and
+        reliability for small molecules. Their notation (e.g., 6-31G, 6-311G)
+        reflects a split-valence approach: using multiple functions to describe
+        valence electrons and optional polarization (e.g., 6-31G(d)). These sets
+        were primarily designed for lighter elements (first and second rows) and
+        often lack consistency when extended to heavier elements, especially
+        transition metals and post-d-block elements. Their polarization and
+        diffuse functions are not systematically optimized for all elements,
+        leading to uneven accuracy. As chemistry expanded to include heavier
+        elements and more sophisticated methods, their limitations became
+        apparent.
+      </p>
+      <p>
+        The def2 sets, on the other hand, are explicitly designed to be balanced
+        across H to Rn (initially excluding lanthanides but later on improved to
+        include lanthanides<sup class="citation">[3]</sup>). This means that the
+        basis sets provide a consistent level of accuracy for main group
+        elements, transition metals (d-block), and heavy p-block elements. This
+        balance is achieved by tailoring the basis sets to the electronic
+        structure of each element, incorporating ECPs for heavier atoms to
+        handle scalar relativistic effects and optimizing the number of
+        primitive and contracted functions systematically. In addition, diffuse
+        variants such as def2-TZVPPD and ma-def2 are available in def2-family of
+        basis sets. These diffuse functions are important for the correct
+        description of anionic electron distributions, response properties such
+        as dipole polarisability and electron affinity (EA) calculations.
+      </p>
+
+      <h3>1. Balanced Accuracy Across the Periodic Table</h3>
+      <p>
+        One of the standout features of the def2 basis sets is their
+        <em>balanced</em> design across the periodic table, from hydrogen (H) to
+        radon (Rn). Pople basis sets were optimized for lighter elements. For
+        these, they perform admirably, but their accuracy decreases for heavier
+        elements like transition metals (e.g., gold, Au) or post-d-block species
+        (e.g., lead, Pb). Adding polarization or diffuse functions (e.g.,
+        6-311++G) helps, but the approach isn’t systematic, leading to uneven
+        performance.
+      </p>
+      <p>
+        In contrast, the def2 sets were designed to ensure consistent quality
+        for all elements. For heavier atoms (Rb to Rn), they incorporate
+        effective core potentials (ECPs) to handle core electrons and
+        relativistic effects, while lighter elements (H to Kr) use all-electron
+        descriptions. The paper tested over 300 molecules, covering nearly every
+        element in common oxidation states, and found that def2 maintains
+        accuracy across main group elements (e.g., N, P), d-block metals (e.g.,
+        Au, Cu), and heavy p-block elements (e.g., Sb, Bi). This universality
+        makes def2 a more reliable choice for diverse chemical systems, from
+        simple organics to metal clusters.
+      </p>
+
+      <h3>2. Improved Polarization Functions</h3>
+      <p>
+        Polarization functions are additional orbitals (e.g., d, f, g) that
+        allow the wavefunction to adapt to molecular environments, capturing
+        effects like electron correlation or core-valence interactions. In Pople
+        sets, polarization is minimal: 6-31G(d) adds one set of d functions to
+        heavy atoms, and 6-31G(d,p) includes p functions for hydrogen. This
+        works for basic HF or DFT calculations on small molecules but falls
+        short for correlated methods like MP2 or for systems with significant
+        core effects, such as transition metal compounds.
+      </p>
+      <p>
+        The def2 basis sets include systematically optimized sets tailored to
+        each element’s needs. For example, basis set def2-QZVPP provides 2f1g
+        functions for p-block elements like antimony (Sb) or bismuth (Bi), and
+        even s-block elements like barium (Ba) get 2f1f sets. These “core” and
+        “valence” polarization functions improve the description of inner shells
+        and outer electrons, respectively. Tests on molecules like Au₂ and PbO₂
+        (as shown in Table 5 of <sup class="citation">[1]</sup>) reveal that
+        def2’s enhanced polarization reduces errors in bond lengths and
+        energies, especially for MP2, where Pople sets struggle due to their
+        limited flexibility.
+      </p>
+
+      <h3>3. Systematic Convergence to the Basis Set Limit</h3>
+      <p>
+        The <em>basis set limit</em>, the point where adding more functions
+        yields no further improvement for a given method, is a desirable
+        accuracy for computational chemistry. Pople sets converge to this limit
+        slowly and unpredictably. For instance, moving from 6-31G to 6-311G to
+        6-311++G(3df,3pd) boosts accuracy, but the progression is haphazard,
+        often over- or under-polarizing certain elements. This trial-and-error
+        approach can leave users guessing about the right level of augmentation.
+      </p>
+      <p>
+        The def2 family, however, is built hierarchically: split valence
+        (def2-SV(P)), triple zeta (def2-TZVP), and quadruple zeta
+        (def2-QZVP/QZVPP). This ensures systematic convergence to the basis set
+        limit. The paper’s atomization energy tests (Figs. 1–4<sup
+          class="citation"
+          >[1]</sup
+        >) show def2-QZVPP errors dropping to 0.01–0.1 eV/atom for DFT and MP2,
+        nearing the basis set limit with far fewer guesswork than Pople sets.
+        For example, Au₂’s bond length converges smoothly from 254.37 pm
+        (def2-SVP) to 251.31 pm (def2-QZVPP) in DFT.
+      </p>
+
+      <h3>4. Improved Accuracy in Molecular Properties</h3>
+      <p>
+        Accuracy in properties like bond lengths, angles, and atomization
+        energies is where basis sets prove their worth. Pople sets perform well
+        for simple organic molecules but falter with heavier elements or
+        correlated methods. Errors in bond lengths can reach several picometers
+        (pm), and atomization energies may deviate significantly, especially for
+        transition metal dimers or ionic compounds.
+      </p>
+      <p>
+        The def2 sets perform well across the board. Table 5<sup
+          class="citation"
+          >[1]</sup
+        >
+        shows bond length errors below 1 pm with def2-TZVP for DFT and HF (e.g.,
+        H₂O: 97.13 pm vs. 96.91 pm for def2-QZVPP), and even for MP2, def2-TZVPP
+        keeps errors to 1–2 pm (e.g., Au₂: 243.72 pm vs. 242.72 pm). Challenging
+        cases like BaO, where Pople sets might overestimate bonds by 5–10 pm,
+        see errors shrink to 1 pm with def2-TZVPP.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>
+        The choice of right basis sets is important in achieving balanced
+        efficiency and accuracy in quantum chemistry. Pople basis sets laid the
+        groundwork, offering a reliable starting point for small organic
+        molecules. As chemistry’s scope widened — embracing transition metals,
+        heavy elements, and advanced methods — their limitations surfaced.
+      </p>
+      <p>
+        The def2-family of basis sets were developed to achieve a balanced
+        accuracy across the whole periodic table, with enhanced polarization,
+        systematic convergence, more accurate molecular property predictions,
+        and better computational efficiency. Unlike Pople sets’ bias toward
+        lighter atoms, def2 ensures uniform accuracy from H to Rn, tackling
+        everything from H₂O to Au₂ with equal finesse. In adddition, through
+        optimized contractions and polarization (e.g., 2f for core, 1g for
+        valence in Sb), def2 avoids over- or under-representing any region. In
+        conclusion, def2 basis sets can be generally applicable to HF, DFT, and
+        MP2 methods.
+      </p>
+      <p>
+        A recommendation from the developers of def2-basis sets is that: At DFT
+        level, def2-SV(P) basis sets can be used to obtain (more than)
+        qualitatively correct results and def2-TZVP basis sets results not too
+        far from the DFT basis set limit, which can be achieved with the
+        def2-QZVP basis sets. For HF calculations, larger polarization sets are
+        needed (use def2-SVP and def2-TZVPP bases for the respective purposes).
+        For MP2 (and other post-HF methods), def2-SVP bases may be used for
+        explorative calculations, but def2- TZVPP bases will be needed to get
+        quantitatively satisfactory results and def2-QZVPP bases to approximate
+        basis set limit.
+      </p>
+
+      <br />
+      <p>References:</p>
+      <ol>
+        <li><i>Phys. Chem. Chem. Phys.</i>, <b>2005</b>, 7 (18), 3297-3305</li>
+        <li><i>Phys. Chem. Chem. Phys.</i> <b>2006</b>, 8 (9), 1057–1065.</li>
+        <li><i>J. Chem. Theory Comput.</i> <b>2012</b>, 8, 11, 4062–4068.</li>
+      </ol>
+      <br />
+      <p>Further Readings:</p>
+      <ul>
+        <li>
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/qua.24355"
+            >Gaussian basis sets for molecular applications</a
+          >
+        </li>
+        <li>
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.3c05573"
+            >Benchmarking Basis Sets for Density Functional Theory
+            Thermochemistry Calculations: Why Unpolarized Basis Sets and the
+            Polarized 6-311G Family Should Be Avoided</a
+          >
+        </li>
+        <li>
+          <a href="https://pubs.acs.org/doi/10.1021/acs.jpca.4c00283"
+            >Comment on “Benchmarking Basis Sets for Density Functional Theory
+            Thermochemistry Calculations: Why Unpolarized Basis Sets and the
+            Polarized 6-311G Family Should Be Avoided”</a
+          >
+        </li>
+        <li>
+          <a href="https://pubs.acs.org/doi/10.1021/acs.jpca.4c03017"
+            >Reply to Comment on “Benchmarking Basis Sets for Density Functional
+            Theory Thermochemistry Calculations: Why Unpolarized Basis Sets and
+            the Polarized 6-311G Family Should Be Avoided”</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://mattermodeling.stackexchange.com/questions/9678/choosing-between-6-311g3df-3pd-and-def2-tzvppd-for-certain-type-of-diffuse-s"
+            >Choosing between 6-311++G(3df,3pd) and def2-TZVPPD for certain type
+            of diffuse system</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://pubs.aip.org/aip/jcp/article-abstract/91/11/7305/95838/6-311G-is-not-of-valence-triple-zeta"
+            >6‐311G is not of valence triple‐zeta quality</a
+          >
+        </li>
+        <li>
+          <a href="https://pubs.acs.org/doi/10.1021/ja0630285"
+            >Popular Theoretical Methods Predict Benzene and Arenes To Be
+            Nonplanar</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <table id="table">
+      <tbody>
+        <tr>
+          <td>
+            <h3>Contact</h3>
+            <h6>
+              Run Run Shaw Science Building,
+              <br />
+              The Chinese University of Hong Kong,
+              <br />
+              Shatin, N.T., Hong Kong
+            </h6>
+            <h4>xinglong.zhang@cuhk.edu.hk</h4>
+          </td>
+
+          <td>
+            <a
+              target="_blank"
+              href="https://www.cuhk.edu.hk/english/index.html"
+            >
+              <img src="../images/cuhk_logo.png" align="center" height="120" />
+            </a>
+          </td>
+
+          <td>
+            <a target="_blank" href="https://chem.cuhk.edu.hk/">
+              <img src="../images/cuhk_chem.webp" align="center" height="130" />
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <p align="center">
+        <a href="https://www.free-counters.org/">free HitCounter</a>
+        <script
+          type="text/javascript"
+          src="https://www.freevisitorcounters.com/auth.php?id=6cb5618195c41ad8fac718e41c1ba75f969a967a"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://www.freevisitorcounters.com/en/home/counter/1170320/t/7"
+        ></script>
+      </p>
+      <p align="center">&copy;2024 Xinglong Zhang</p>
+      <p>&nbsp;</p>
+    </footer>
+  </body>
+</html>
