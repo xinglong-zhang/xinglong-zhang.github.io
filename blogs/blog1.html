@@ -87,11 +87,13 @@
         electron density (or technically the lack thereof) at atomic nuclei)
         because GTOs are computationally more efficient to compute multicentre
         integrals (due to Gaussian Product Theorem). Thus the evaluation of
-        multicentre integrals are much faster using GTOs. The quality of a basis
-        set determines the accuracy of the results. A small basis set might miss
-        critical electronic details, leading to errors in bond lengths or
-        energies, while an overly large one can bog down computations, making
-        them impractical for all but the simplest systems.
+        multicentre integrals (integrals of basis functions across multiple
+        atomic nuclei, as in Coulomb and exchange integrals) are much faster
+        using GTOs. The quality of a basis set determines the accuracy of the
+        results. A small basis set might miss critical electronic details,
+        leading to errors in bond lengths or energies, while an overly large one
+        can bog down computations, making them impractical for all but the
+        simplest systems.
       </p>
 
       <h2>Comparing Pople and def2 Basis Sets</h2>
