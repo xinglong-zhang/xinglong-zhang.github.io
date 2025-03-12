@@ -758,3 +758,73 @@ mark.crimson {
   margin-left: 2px; /* Space between superscript numbers */
   color: blue; /* Optional: style the citation */
 }
+
+blockquote {
+  background-color: #2d2d2d;
+  border-left: 4px solid #444;
+  padding: 15px;
+  margin: 20px auto;
+  width: 80%;
+  font-size: 16px;
+  text-align: left;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+code {
+  color: #e6e6e6;
+}
+
+li code {
+  color: blue;
+}
+
+td code {
+  color: blue;
+}
+
+.cheatsheet {
+  padding: 1px 80px 1px 80px;
+  margin: 10px auto;
+  background: white;
+  height: 50px;
+  width: 800px;
+  border-top: solid 4px #5ad7d7;
+  border-bottom: solid 4px #5ad7d7;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.cheatsheet th,
+.cheatsheet td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.cheatsheet th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.cheatsheet td {
+  background-color: #fff;
+  color: #555;
+}
+
+.cheatsheet code {
+  font-family: monospace;
+  color: #0000ff;
+  background-color: #f8f8f8;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.cheatsheet tr:hover td {
+  background-color: #f9f9f9;
+}
