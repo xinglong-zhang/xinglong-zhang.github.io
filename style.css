@@ -786,6 +786,10 @@ td code {
   color: blue;
 }
 
+p code {
+  color: blue;
+}
+
 .cheatsheet {
   padding: 1px 80px 1px 80px;
   margin: 10px auto;
