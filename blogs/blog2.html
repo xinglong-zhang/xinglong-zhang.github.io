@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- character set. this is a comment -->
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <!-- link to the style css sheet-->
+    <title>Blog | Zhang Lab @ The Chinese University of Hong Kong</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-108098763-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-108098763-1");
+    </script>
+  </head>
+
+  <body>
+    <div class="container"></div>
+    <header>
+      <div class="header"></div>
+    </header>
+
+    <div id="header" align="right">
+      <img
+        class="header-image"
+        src="../images/cuhk_science.jpeg"
+        alt="CUHK Science Building"
+      />
+    </div>
+
+    <div id="menu">
+      <a href="../index.html"><font color="#FFC433">Home</font></a
+      >&nbsp; <a href="../people.html"><font color="#FFC433">People</font></a
+      >&nbsp;
+      <a href="../research.html"><font color="#FFC433">Research</font></a
+      >&nbsp;
+      <a href="../publications.html"
+        ><font color="#FFC433">Publications</font></a
+      >&nbsp;
+      <!--            <a href="collaborators.html"><font color=#FFC433>Collaborators</font></a>&nbsp;-->
+      <a href="../teaching.html"><font color="#FFC433">Teaching</font></a
+      >&nbsp;
+      <!--<a href="rejections.html"><font color=#FFC433>Rejections</font></a>-->
+      <a href="../gallery.html"><font color="#FFC433">Gallery</font></a
+      >&nbsp;
+      <a href="../resources.html"><font color="#FFC433">Resources</font></a
+      >&nbsp;
+      <a href="../openings.html"><font color="#FFC433">Openings</font></a
+      >&nbsp; <a href="../blog.html"><font color="#FFC433">Blog</font></a
+      >&nbsp;
+      <!--      <a href="zh/index.html"><font color="#FFC433">中文</font></a>-->
+    </div>
+
+    <div class="paddingleft" id="content">
+      <p>&nbsp;</p>
+      <h1>Git Tutorial: Essential Commands and Scenarios</h1>
+      <br />
+      <p>
+        Git is a distributed version control system that helps you track changes
+        to your code, collaborate with others, and manage project history. This
+        simple tutorial covers some of the most commonly used git commands and
+        workflows you will need in real-world development.
+      </p>
+      <p>
+        What does "git" stand for? From the first README by the developers, we
+        see the following
+      </p>
+
+      <blockquote>
+        <pre><code>GIT – the stupid content tracker
+        
+"git" can mean anything, depending on your mood.
+
+- random three-letter combination that is pronounceable, and not
+  actually used by any common UNIX command. The fact that it is a
+  mispronunciation of "get" may or may not be relevant.
+- stupid. contemptible and despicable. simple. Take your pick from the
+  dictionary of slang.
+- "global information tracker": you're in a good mood, and it actually
+  works for you. Angels sing, and a light suddenly fills the room.
+- "goddamn idiotic truckload of sh*t": when it breaks
+
+This is a stupid (but extremely fast) directory content manager. It
+doesn't do a whole lot, but what it _does_ do is track directory
+contents efficiently.</code></pre>
+      </blockquote>
+
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#setup">Setup and Configuration</a></li>
+        <li><a href="#basic-workflow">Basic Workflow</a></li>
+        <li><a href="#branching">Branching and Merging</a></li>
+        <li><a href="#collaboration">Collaboration</a></li>
+        <li><a href="#fixing-mistakes">Fixing Mistakes</a></li>
+        <li><a href="#scenarios">Common Scenarios</a></li>
+        <li><a href="#tips">Tips and Best Practices</a></li>
+      </ol>
+
+      <h2 id="setup">1. Setup and Configuration</h2>
+      <p>Before using Git, set up your identity:</p>
+      <blockquote>
+        <pre><code>git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"</code></pre>
+      </blockquote>
+      <ul>
+        <li>Check your configuration: <code>git config --list</code></li>
+        <li>Initialize a new Git repository: <code>git init</code></li>
+      </ul>
+
+      <h2 id="basic-workflow">2. Basic Workflow</h2>
+      <p>
+        The basic Git workflow involves staging changes, committing them, and
+        viewing history.
+      </p>
+
+      <h3>Create and Track Files</h3>
+      <ul>
+        <li>Create a file (e.g., <code>readme.md</code>).</li>
+        <li>Check the status of your repository: <code>git status</code></li>
+      </ul>
+
+      <h3>Stage Changes</h3>
+      <ul>
+        <li>
+          Add specific files to the staging area: <code>git add readme.md</code>
+        </li>
+        <li>Add all modified files: <code>git add .</code></li>
+      </ul>
+
+      <h3>Commit Changes</h3>
+      <ul>
+        <li>
+          Save staged changes with a message:
+          <code>git commit -m "Add readme file"</code>
+        </li>
+        <li>Stage and commit in <strong>one</strong> step:</li>
+        <blockquote><code>git commit -am "Update readme"</code></blockquote>
+      </ul>
+
+      <h3>View History</h3>
+      <ul>
+        <li>See commit history: <code>git log</code></li>
+        <li>Compact version: <code>git log --oneline</code></li>
+      </ul>
+
+      <h2 id="branching">3. Branching and Merging</h2>
+      <p>
+        Branches allow you to work on features or fixes without affecting the
+        main codebase.
+      </p>
+
+      <h3>Create and Switch Branches</h3>
+      <ul>
+        <li>Create a new branch: <code>git branch feature-branch</code></li>
+        <li>Switch to it: <code>git checkout feature-branch</code></li>
+        <li>Create and switch in <strong>one</strong> command:</li>
+        <blockquote><code>git checkout -b feature-branch</code></blockquote>
+      </ul>
+
+      <h3>List Branches</h3>
+      <ul>
+        <li>
+          See all branches (current branch marked with <code>*</code>):
+          <code>git branch</code>
+        </li>
+      </ul>
+
+      <h3>Merge Branches</h3>
+      <ul>
+        <li>
+          Switch to the target branch (e.g., <code>master</code>):
+          <code>git checkout master</code>
+        </li>
+        <li>
+          Merge the feature branch into <code>master</code>:
+          <code>git merge feature-branch</code>
+          <br />
+          Note: I do not recommend directly merge feature-branch into
+          master/main branch, unless you know what you are doing. Always open a
+          Pull Request (PR) to merge your feature-branch into your into
+          master/main branch!
+        </li>
+        <li>
+          If there are conflicts, resolve them manually, then:
+          <pre><code>git add .
+git commit</code></pre>
+        </li>
+      </ul>
+
+      <h3>Delete a Branch</h3>
+      <ul>
+        <li>
+          After merging, delete the branch:
+          <code>git branch -d feature-branch</code>
+        </li>
+      </ul>
+
+      <h2 id="collaboration">4. Collaboration</h2>
+      <p>
+        Git can be very useful in team settings with remote repositories (e.g.,
+        GitHub, GitLab).
+      </p>
+
+      <h3>Clone a Repository</h3>
+      <ul>
+        <li>
+          Download a remote repo:
+          <code>git clone https://github.com/username/repo.git</code>
+        </li>
+      </ul>
+
+      <h3>Link to a Remote</h3>
+      <ul>
+        <li>
+          Add a remote repository:
+          <code
+            >git remote add origin https://github.com/username/repo.git</code
+          >
+        </li>
+      </ul>
+
+      <h3>Push Changes</h3>
+      <ul>
+        <li>
+          Send local commits to the remote: <code>git push origin master</code>
+        </li>
+      </ul>
+
+      <h3>Pull Changes</h3>
+      <ul>
+        <li>
+          Fetch and merge updates from the remote:
+          <code>git pull origin master</code>
+        </li>
+      </ul>
+
+      <h3>Fetch Without Merging</h3>
+      <ul>
+        <li>Download updates without merging: <code>git fetch origin</code></li>
+      </ul>
+
+      <h2 id="fixing-mistakes">5. Fixing Mistakes</h2>
+      <p>Mistakes happen — Git provides ways to undo or fix them.</p>
+
+      <h3>Unstage Changes</h3>
+      <ul>
+        <li>
+          Remove a file from staging:
+          <code>git restore --staged readme.md</code>
+        </li>
+      </ul>
+
+      <h3>Discard Local Changes</h3>
+      <ul>
+        <li>
+          Undo uncommitted changes to a file: <code>git restore readme.md</code>
+        </li>
+        <li>Discard all uncommitted changes: <code>git restore .</code></li>
+        <li>
+          Discard all changes and revert back to where you have started (will
+          lose all work!): <code>git checkout -- .</code>
+        </li>
+      </ul>
+
+      <h3>Amend a Commit</h3>
+      <ul>
+        <li>
+          Edit the last commit message or add forgotten changes:
+          <code>git commit --amend -m "Updated message"</code>
+        </li>
+      </ul>
+
+      <h3>Revert a Commit</h3>
+      <ul>
+        <li>
+          Undo a commit by creating a new commit:
+          <code>git revert &lt;commit-hash&gt;</code>
+        </li>
+      </ul>
+
+      <h3>Reset Commits</h3>
+      <ul>
+        <li>
+          Move back to a previous commit:
+          <code>git reset --hard &lt;commit-hash&gt;</code>
+          <br />
+          Warning: This rewrites the commit history! That means if you have
+          commits after the &lt;commit-hash&gt; that you reset to, those commits
+          are <strong>no longer</strong> part of the branch’s history. They are
+          effectively <strong>removed</strong> from the branch’s timeline.
+        </li>
+        <li>
+          Uncommit but keep changes:
+          <code>git reset --soft &lt;commit-hash&gt;</code>
+        </li>
+      </ul>
+
+      <h2 id="scenarios">6. Common Scenarios</h2>
+      <p>Here are practical workflows for real-world situations.</p>
+
+      <h3>Scenario 1: Starting a New Feature</h3>
+      <ol type="a">
+        <li>Create a branch: <code>git checkout -b new-feature</code></li>
+        <li>
+          Work, stage, and commit:
+          <pre><code>git add .
+git commit -m "Implement feature"</code></pre>
+        </li>
+        <li>Push to remote: <code>git push origin new-feature</code></li>
+        <li>
+          Open a <strong>pull request (PR)</strong> on GitHub/GitLab. <br />A
+          good advice: ALWAYS open a PR into
+          <strong>non-master/non-main</strong> branch when requesting to merge
+          changes.
+        </li>
+      </ol>
+      <h3>Scenario 2: Resolving Merge Conflicts</h3>
+      <ol type="a">
+        <li>Run <code>git merge</code> and encounter conflicts.</li>
+        <li>
+          Open conflicted files, resolve manually (look for
+          <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>,
+          <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> markers).
+        </li>
+        <li>Stage resolved files: <code>git add &lt;file&gt;</code></li>
+        <li>Complete the merge: <code>git commit</code></li>
+      </ol>
+
+      <h3>Scenario 3: Viewing Differences</h3>
+      <ul>
+        <li>See changes in working directory: <code>git diff</code></li>
+        <li>Compare staged changes: <code>git diff --staged</code></li>
+        <li>Compare branches: <code>git diff master feature-branch</code></li>
+      </ul>
+
+      <h2 id="tips">7. Tips and Best Practices</h2>
+      <br />
+      <ol type="i">
+        <li>
+          <strong>Commit Often:</strong> Small, logical commits are easier to
+          track and revert.
+        </li>
+        <li>
+          <strong>Write Good Messages:</strong> Use clear, concise commit
+          messages, e.g., "Fix login bug" (good) vs. "Changes" (bad).
+        </li>
+        <li>
+          <strong>Pull Before Pushing:</strong> Avoid conflicts by running
+          <code>git pull</code> first.
+        </li>
+        <li>
+          <strong>Use Branches:</strong> Keep <code>master</code> (sometimes
+          <code>main</code>) branch stable; experiment in feature branches.
+        </li>
+        <li>
+          <strong>Backup Work:</strong> Push to a remote regularly to avoid
+          losing changes.
+        </li>
+      </ol>
+      <br />
+      <h2>Cheat Sheet</h2>
+      <table class="cheatsheet">
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><code>git init</code></td>
+          <td>Initialize a new repository</td>
+        </tr>
+        <tr>
+          <td><code>git add &lt;file&gt;</code></td>
+          <td>Stage changes</td>
+        </tr>
+        <tr>
+          <td><code>git commit -m "msg"</code></td>
+          <td>Commit staged changes</td>
+        </tr>
+        <tr>
+          <td><code>git status</code></td>
+          <td>Check repository status</td>
+        </tr>
+        <tr>
+          <td><code>git log</code></td>
+          <td>View commit history</td>
+        </tr>
+        <tr>
+          <td><code>git branch</code></td>
+          <td>List branches</td>
+        </tr>
+        <tr>
+          <td><code>git checkout -b &lt;name&gt;</code></td>
+          <td>Create and switch to a branch</td>
+        </tr>
+        <tr>
+          <td><code>git merge &lt;branch&gt;</code></td>
+          <td>Merge a branch into the current one</td>
+        </tr>
+        <tr>
+          <td><code>git push origin &lt;branch&gt;</code></td>
+          <td>Push to remote repository</td>
+        </tr>
+        <tr>
+          <td><code>git pull origin &lt;branch&gt;</code></td>
+          <td>Pull updates from remote</td>
+        </tr>
+        <tr>
+          <td><code>git reset --hard</code></td>
+          <td>Reset to a commit (discard changes)</td>
+        </tr>
+        <tr>
+          <td><code>git revert &lt;hash&gt;</code></td>
+          <td>Undo a commit with a new commit</td>
+        </tr>
+      </table>
+
+      <p>
+        This tutorial covers the essentials to get you started and handle most
+        day-to-day tasks with Git. Happy coding!
+      </p>
+    </div>
+
+    <table id="table">
+      <tbody>
+        <tr>
+          <td>
+            <h3>Contact</h3>
+            <h6>
+              Run Run Shaw Science Building,
+              <br />
+              The Chinese University of Hong Kong,
+              <br />
+              Shatin, N.T., Hong Kong
+            </h6>
+            <h4>xinglong.zhang@cuhk.edu.hk</h4>
+          </td>
+
+          <td>
+            <a
+              target="_blank"
+              href="https://www.cuhk.edu.hk/english/index.html"
+            >
+              <img
+                src="../images/logo/cuhk_logo.png"
+                align="center"
+                height="120"
+              />
+            </a>
+          </td>
+
+          <td>
+            <a target="_blank" href="https://chem.cuhk.edu.hk/">
+              <img src="../images/cuhk_chem.png" align="center" height="130" />
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <p align="center">
+        <a href="https://www.free-counters.org/">free HitCounter</a>
+        <script
+          type="text/javascript"
+          src="https://www.freevisitorcounters.com/auth.php?id=6cb5618195c41ad8fac718e41c1ba75f969a967a"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://www.freevisitorcounters.com/en/home/counter/1170320/t/7"
+        ></script>
+      </p>
+      <p align="center">&copy;2024 Xinglong Zhang</p>
+      <p>&nbsp;</p>
+    </footer>
+  </body>
+</html>
