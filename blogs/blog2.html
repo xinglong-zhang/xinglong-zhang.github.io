@@ -102,9 +102,9 @@ contents efficiently.</code></pre>
         <li><a href="#fixing-mistakes">Fixing Mistakes</a></li>
         <li><a href="#scenarios">Common Scenarios</a></li>
         <li><a href="#tips">Tips and Best Practices</a></li>
-                  <li><a href="#cheatsheet">Cheat Sheet</a></li>
+        <li><a href="#cheatsheet">Cheat Sheet</a></li>
       </ol>
-        <br/>
+      <br />
 
       <h2 id="setup">1. Setup and Configuration</h2>
       <p>Before using Git, set up your identity:</p>
@@ -187,8 +187,8 @@ git config --global user.email "your.email@example.com"</code></pre>
           <br />
           Note: I do not recommend directly merge feature-branch into
           master/main branch, unless you know what you are doing. Always open a
-          Pull Request (PR) to merge your feature-branch into your
-          master/main branch!
+          Pull Request (PR) to merge your feature-branch into your master/main
+          branch!
         </li>
         <li>
           If there are conflicts, resolve them manually, then:
@@ -321,20 +321,24 @@ git commit -m "Implement feature"</code></pre>
           Open a <strong>pull request (PR)</strong> on GitHub/GitLab. <br />
         </li>
       </ol>
-        <h3>Scenario 2: Fixing a Bug on Master</h3>
-    <ol>
+      <h3>Scenario 2: Fixing a Bug on Master</h3>
+      <ol>
         <li>Switch to <code>master</code>: <code>git checkout master</code></li>
-        <li>Create a bugfix branch: <code>git checkout -b bugfix-issue-123</code></li>
-        <li>Fix the bug, commit, and push:
-            <pre><code>git add .
+        <li>
+          Create a bugfix branch: <code>git checkout -b bugfix-issue-123</code>
+        </li>
+        <li>
+          Fix the bug, commit, and push:
+          <pre><code>git add .
 git commit -m "Fix issue #123"
 git push origin bugfix-issue-123</code></pre>
         </li>
-        <li>Merge into <code>master</code> via PR or locally:
-            <pre><code>git checkout master
+        <li>
+          Merge into <code>master</code> via PR or locally:
+          <pre><code>git checkout master
 git merge bugfix-issue-123</code></pre>
         </li>
-    </ol>
+      </ol>
       <h3>Scenario 3: Resolving Merge Conflicts</h3>
       <ol type="a">
         <li>Run <code>git merge</code> and encounter conflicts.</li>
@@ -346,19 +350,29 @@ git merge bugfix-issue-123</code></pre>
         <li>Stage resolved files: <code>git add &lt;file&gt;</code></li>
         <li>Complete the merge: <code>git commit</code></li>
       </ol>
-               
-        <h3>Scenario 4: Redirecting a PR to a Different Branch</h3>
-    <p>In this scenario, contributor submits PR to <code>master</code>, but you want it on <code>dev</code> to review it first before merging into main, do:</p>
-    <ol type="a">
-        <li>Fetch the PR: <code>git fetch origin pull/&lt;PR-number&gt;/head:pr-branch</code></li>
-        <li>Create a new branch based on <code>dev</code>:
-            <pre><code>git checkout dev
+
+      <h3>Scenario 4: Redirecting a PR to a Different Branch</h3>
+      <p>
+        In this scenario, contributor submits PR to <code>master</code>, but you
+        want it on <code>dev</code> to review it first before merging into main,
+        do:
+      </p>
+      <ol type="a">
+        <li>
+          Fetch the PR:
+          <code>git fetch origin pull/&lt;PR-number&gt;/head:pr-branch</code>
+        </li>
+        <li>
+          Create a new branch based on <code>dev</code>:
+          <pre><code>git checkout dev
 git checkout -b pr-dev-branch
 git merge pr-branch</code></pre>
         </li>
-        <li>Push and create a new PR: <code>git push origin pr-dev-branch</code></li>
+        <li>
+          Push and create a new PR: <code>git push origin pr-dev-branch</code>
+        </li>
         <li>Close the original PR with a note.</li>
-    </ol>
+      </ol>
 
       <h3>Scenario 5: Viewing Differences</h3>
       <ul>
@@ -366,7 +380,6 @@ git merge pr-branch</code></pre>
         <li>Compare staged changes: <code>git diff --staged</code></li>
         <li>Compare branches: <code>git diff master feature-branch</code></li>
       </ul>
- 
 
       <h2 id="tips">7. Tips and Best Practices</h2>
       <br />
