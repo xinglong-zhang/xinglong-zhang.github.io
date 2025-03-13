@@ -1,0 +1,31 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches: [ master ]  # Adjust to your default branch (e.g., "master" if applicable)
+
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    name: Generate a sitemap
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Ensures full commit history for <lastmod> tags
+
+      - name: Generate the sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: "https://xinglong-zhang.github.io/"  
+          path-to-root: "/"  # Root directory of site (will include all HTML files in subdirectories)
+
+      - name: Commit and push the sitemap
+        run: |
+          if [[ `git status --porcelain sitemap.xml` ]]; then
+            git config --global user.name 'github-actions'
+            git config --global user.email 'github-actions@users.noreply.github.com'
+            git add sitemap.xml
+            git commit -m "Automated sitemap update"
+            git push
+          fi
