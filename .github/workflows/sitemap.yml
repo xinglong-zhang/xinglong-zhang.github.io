@@ -18,7 +18,7 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: "https://xinglong-zhang.github.io/"  
-          path-to-root: "/"  # Root directory of site (will include all HTML files in subdirectories)
+          path-to-root: "."  # Root directory of site (will include all HTML files in subdirectories)
 
       - name: Commit and push the sitemap
         run: |
