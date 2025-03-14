@@ -2,7 +2,7 @@ name: Generate Sitemap
 
 on:
   push:
-    branches: [ sitemap ]  # Adjust to your default branch (e.g., "master" if applicable)
+    branches: [sitemap] # Adjust to your default branch (e.g., "master" if applicable)
 
 jobs:
   sitemap_job:
@@ -12,13 +12,13 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Ensures full commit history for <lastmod> tags
+          fetch-depth: 0 # Ensures full commit history for <lastmod> tags
 
       - name: Generate the sitemap
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url-path: "https://xinglong-zhang.github.io/"  
-          path-to-root: "."  # Root directory of site (will include all HTML files in subdirectories)
+          base-url-path: "https://xinglong-zhang.github.io/"
+          path-to-root: "." # Root directory of site (will include all HTML files in subdirectories)
 
       - name: Commit and push the sitemap
         run: |
