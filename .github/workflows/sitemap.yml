@@ -2,7 +2,7 @@ name: Generate Sitemap
 
 on:
   push:
-    branches: [ master ]  # Adjust to your default branch (e.g., "master" if applicable)
+    branches: [ sitemap ]  # Adjust to your default branch (e.g., "master" if applicable)
 
 jobs:
   sitemap_job:
