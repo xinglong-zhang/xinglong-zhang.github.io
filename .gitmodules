@@ -1,0 +1,3 @@
+[submodule "chemsmart-docs"]
+	path = chemsmart-docs
+	url = https://github.com/xinglong-zhang/chemsmart-docs
