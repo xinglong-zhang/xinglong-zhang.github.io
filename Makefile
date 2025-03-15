@@ -4,7 +4,7 @@ ENV_PREFIX=$(shell if conda env list | grep -q htmlenv; then echo "conda run -n 
 SHELL := /bin/bash
 USE_CONDA ?= true  # Default to true if not explicitly set
 MAKEFILE_DIR := $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
-HTML_PATH := $(MAKEFILE_DIR)src/  # Adjust based on your project structure
+HTML_PATH := $(MAKEFILE_DIR)  
 
 .PHONY: help
 help:             ## Show the help menu.
@@ -34,7 +34,8 @@ test: lint        ## Run tests (if applicable).
 
 .PHONY: clean
 clean: ## Remove temporary and unnecessary files.
-	@find "$(HTML_PATH)" -name '*.bak' -exec rm -f {} + 2>/dev/null
-	@find "$(HTML_PATH)" -name '*~' -exec rm -f {} + 2>/dev/null
-	@rm -rf .cache node_modules dist 2>/dev/null
-
+	@echo "Running clean in $(HTML_PATH)"
+	@find "$(HTML_PATH)" -name '*.bak' -exec rm -f {} + || true
+	@find "$(HTML_PATH)" -name '*~' -exec rm -f {} + || true
+	@rm -rf .cache node_modules dist || true
+	@echo "Clean completed"
