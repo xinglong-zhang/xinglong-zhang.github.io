@@ -5,17 +5,17 @@ repos:
         name: Run make fmt
         entry: make fmt
         language: system
-        files: \.py$
+        files: \.html$
         pass_filenames: false
       - id: make-lint
         name: Run make lint
         entry: make lint
         language: system
-        files: \.py$
+        files: \.html$
         pass_filenames: false
       - id: make-clean
         name: Run make clean
         entry: make clean
         language: system
-        files: ''
+        files: ""
         pass_filenames: false
