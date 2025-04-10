@@ -832,3 +832,17 @@ p code {
 .cheatsheet tr:hover td {
   background-color: #f9f9f9;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-table {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-table p {
+  max-width: 100%; /* Matches the width of the video above it */
+}
