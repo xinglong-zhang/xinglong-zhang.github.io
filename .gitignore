@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editor/IDE files
+.idea/
+*.idea/
+
+# Node.js (if using npm/yarn for front-end dependencies)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output (e.g., minified CSS, bundled JS)
+dist/
+build/
+
+# Temporary files
+*.bak
+*.tmp
