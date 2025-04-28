@@ -160,6 +160,34 @@
                 width="850"
                 align="center"
             /></a>
+            <table class="video-table">
+              <tr>
+                <td>
+                  <video width="480" height="270" autoplay loop controls>
+                    <source
+                      src="../videos/Fe2_quintet_insertion_irc.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <p style="max-width: 480px">
+                    内球面自由基-自由基C–C偶联的内禀反应坐标 (IRC) 动画。
+                  </p>
+                </td>
+                <td>
+                  <video width="480" height="270" autoplay loop controls>
+                    <source
+                      src="../videos/Fe3_sextet_re_irc.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <p style="max-width: 480px">
+                    外球面还原消除的内禀反应坐标 (IRC) 动画。
+                  </p>
+                </td>
+              </tr>
+            </table>
             <figurecaption>
               <p>
                 上图：铁催化的多组分连结C–C交叉偶联反应。下图：铁催化连结烷基化的计算吉布斯能量分布图。DFT：SMD(THF)-UB3LYP-D3BJ(UMN15)/def2-TZVP//UB3LYP-D3BJ/def2-SVP。能量值前的上标表示各个化合物的自旋态。
@@ -237,6 +265,12 @@
           为准确预测选择性步骤，我们需要进行详细的构象采样（并对所有竞争途径的TS构象进行Boltzmann
           Weighting，如果构象能量非常接近的话），因为错误使用构象可能导致错误预测，如下图所示。我们通常对定位的TS结构进行CREST构象采样，约束关键反应键，并根据系统大小使用5-20个最低xTB能量结构进行DFT精炼的进一步TS优化。
         </p>
+        <div class="video-container">
+          <video width="640" height="360" autoplay loop controls>
+            <source src="../videos/crest_conformers2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <figure>
           <a
             href="../images/research/conformational_sampling.jpg"
@@ -246,6 +280,7 @@
               width="860"
               align="center"
           /></a>
+
           <figurecaption>
             <p>
               构象采样对准确预测选择性的挑战。使用非最低能量TS结构可能导致错误的选择性比率预测（a）甚至相反的选择性预测（b）！
@@ -292,7 +327,7 @@
         <br />
 -->
 
-        <li>2.化学的机器学习 </li>
+        <h2>2. 化学的机器学习</h2>
 
         <p>
           传统催化体系的DFT研究通常依赖于带有隐式溶剂化模型的静态DFT。虽然这种方法在较低计算成本下提供了解释和预测成功，但当溶剂分子积极参与反应且需要显式溶剂化时可能不足。然而，在DFT水平上研究具有显式溶剂化的催化体系在计算上可能需要很多计算力和计算资源，特别是对于需要大量轨迹的大型动态系统进行模拟。
