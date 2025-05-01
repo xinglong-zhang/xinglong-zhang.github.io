@@ -394,24 +394,13 @@
       </tbody>
     </table>
 
-    <footer>
-      <div class="counter-container">
-        <a href="https://www.flagcounter.me/details/fQT">
-          <img src="https://www.flagcounter.me/fQT/" alt="Flag Counter" />
-        </a>
-        <div class="visitor-counter">
-          <a href="https://www.free-counters.org/">总访客数</a>
-          <script
-            type="text/javascript"
-            src="https://www.freevisitorcounters.com/auth.php?id=6cb5618195c41ad8fac718e41c1ba75f969a967a"
-          ></script>
-          <script
-            type="text/javascript"
-            src="https://www.freevisitorcounters.com/en/home/counter/1170320/t/7"
-          ></script>
-        </div>
-      </div>
-      <p>版权所有 &copy;2018–2025 章兴龙</p>
-    </footer>
+    <div id="footer"></div>
+    <script>
+      fetch("../includes/footer_zh.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
