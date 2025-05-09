@@ -3,13 +3,22 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- character set. this is a comment -->
+    <meta
+      name="description"
+      content="章兴龙课题组学术博客，香港中文大学：探讨量子化学、计算化学及相关技术主题，如基组选择和Git教程。"
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://xinglong-zhang.github.io/zh/blog.html"
+    />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <!-- link to the style css sheet-->
     <title>学术博客 | 章兴龙课题组 @ 香港中文大学</title>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-108098763-1"
+      src="https://www.googletagmanager.com/gtag/js?id=G-9XZMHZFQQ5"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -17,8 +26,42 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
-      gtag("config", "UA-108098763-1");
+      gtag("config", "G-9XZMHZFQQ5");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "章兴龙课题组学术博客",
+        "url": "https://xinglong-zhang.github.io/zh/blog.html",
+        "description": "章兴龙课题组的学术博客，分享量子化学、计算化学及技术教程，如def2基组与Pople基组比较及Git使用指南。",
+        "publisher": {
+          "@type": "Organization",
+          "name": "章兴龙课题组 @ 香港中文大学",
+          "url": "https://xinglong-zhang.github.io/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "逸夫科学大楼",
+            "addressLocality": "沙田, 新界",
+            "addressRegion": "香港",
+            "addressCountry": "中国"
+          }
+        },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "为什么在量子化学中def2基组比Pople基组更受欢迎？",
+            "url": "https://xinglong-zhang.github.io/blogs/blog1.html",
+            "description": "探讨量子化学中def2基组相较于Pople基组的优势和应用场景。"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Git教程：基本命令和场景",
+            "url": "https://xinglong-zhang.github.io/blogs/blog2.html",
+            "description": "介绍Git的基本命令和常见使用场景，适用于科研和技术开发。"
+          }
+        ]
+      }
     </script>
   </head>
 
@@ -28,31 +71,34 @@
       <div class="header"></div>
     </header>
 
-    <div class="padding" id="header" align="right">
+    <div class="padding" id="header" style="text-align: right">
       <img
         class="header-image"
         src="../images/cuhk_science.jpeg"
         alt="香港中文大学科学大楼"
+        loading="lazy"
       />
     </div>
 
     <div id="menu">
-      <a href="index.html"><font color="#FFC433">主页</font></a
-      >&nbsp; <a href="people.html"><font color="#FFC433">团队成员</font></a
-      >&nbsp; <a href="research.html"><font color="#FFC433">研究课题</font></a
-      >&nbsp;
-      <a href="publications.html"><font color="#FFC433">科研成果</font></a
-      >&nbsp;
-      <!--            <a href="collaborators.html"><font color=#FFC433>合作者</font></a>&nbsp;-->
-      <a href="teaching.html"><font color="#FFC433">教学</font></a
-      >&nbsp;
+      <a href="index.html"><span style="color: #ffc433">主页</span></a
+      >  <a href="people.html"><span style="color: #ffc433">团队成员</span></a
+      >  <a href="research.html"><span style="color: #ffc433">研究课题</span></a
+      > 
+      <a href="publications.html"
+        ><span style="color: #ffc433">科研成果</span></a
+      > 
+      <!--            <a href="collaborators.html"><font color=#FFC433>合作者</font></a> -->
+      <a href="teaching.html"><span style="color: #ffc433">教学</span></a
+      > 
       <!--<a href="rejections.html"><font color=#FFC433>拒绝</font></a>-->
-      <a href="gallery.html"><font color="#FFC433">活动画廊</font></a
-      >&nbsp; <a href="resources.html"><font color="#FFC433">学习资源</font></a
-      >&nbsp; <a href="openings.html"><font color="#FFC433">招聘启示</font></a
-      >&nbsp;<a href="blog.html"><font color="#FFC433">学术博客</font></a
-      >&nbsp;
-      <a href="../index.html"><font color="#FFC433">English</font></a>
+      <a href="gallery.html"><span style="color: #ffc433">活动画廊</span></a
+      > 
+      <a href="resources.html"><span style="color: #ffc433">学习资源</span></a
+      >  <a href="openings.html"><span style="color: #ffc433">招聘启示</span></a
+      > <a href="blog.html"><span style="color: #ffc433">学术博客</span></a
+      > 
+      <a href="../index.html"><span style="color: #ffc433">English</span></a>
     </div>
 
     <div class="paddingleft" id="content">
@@ -85,7 +131,11 @@
               <br />
               中国香港新界沙田
             </h6>
-            <h4>xinglong.zhang@cuhk.edu.hk</h4>
+            <h4>
+              <a href="mailto:xinglong.zhang@cuhk.edu.hk"
+                >xinglong.zhang@cuhk.edu.hk</a
+              >
+            </h4>
           </td>
 
           <td>
@@ -95,15 +145,23 @@
             >
               <img
                 src="../images/logo/cuhk_logo.png"
+                alt="香港中文大学标志"
                 align="center"
                 height="120"
+                loading="lazy"
               />
             </a>
           </td>
 
           <td>
             <a target="_blank" href="https://chem.cuhk.edu.hk/">
-              <img src="../images/cuhk_chem.png" align="center" height="130" />
+              <img
+                src="../images/cuhk_chem.png"
+                alt="香港中文大学化学系标志"
+                align="center"
+                height="130"
+                loading="lazy"
+              />
             </a>
           </td>
         </tr>
@@ -111,19 +169,27 @@
     </table>
 
     <footer>
-      <p align="center">
-        <a href="https://www.free-counters.org/">访问计数器</a>
-        <script
-          type="text/javascript"
-          src="https://www.freevisitorcounters.com/auth.php?id=6cb5618195c41ad8fac718e41c1ba75f969a967a"
-        ></script>
-        <script
-          type="text/javascript"
-          src="https://www.freevisitorcounters.com/en/home/counter/1170320/t/7"
-        ></script>
-      </p>
-      <p align="center">版权所有 &copy;2018–2025 章兴龙</p>
-      <p> </p>
+      <div class="counter-container">
+        <a href="https://www.flagcounter.me/details/fQT">
+          <img
+            src="https://www.flagcounter.me/fQT/"
+            alt="Flag Counter"
+            loading="lazy"
+          />
+        </a>
+        <div class="visitor-counter">
+          <a href="https://www.free-counters.org/">总访客数</a>
+          <script
+            type="text/javascript"
+            src="https://www.freevisitorcounters.com/auth.php?id=6cb5618195c41ad8fac718e41c1ba75f969a967a"
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://www.freevisitorcounters.com/en/home/counter/1170320/t/7"
+          ></script>
+        </div>
+      </div>
+      <p>版权所有 ©2018–2025 章兴龙</p>
     </footer>
   </body>
 </html>

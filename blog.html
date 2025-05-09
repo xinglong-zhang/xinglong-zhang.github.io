@@ -18,9 +18,43 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- character set. this is a comment -->
+    <meta
+      name="description"
+      content="Zhang Lab Blog at CUHK: Insights on computational chemistry, quantum chemistry basis sets, and Git tutorials."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://xinglong-zhang.github.io/blog.html" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- link to the style css sheet-->
-    <title>Blog | Zhang Lab @ The Chinese University of Hong Kong</title>
+    <title>
+      Blog | Zhang Lab | Department of Chemistry | The Chinese University of
+      Hong Kong (CUHK)
+    </title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Zhang Lab Blog",
+        "url": "https://xinglong-zhang.github.io/blog.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Zhang Lab at CUHK",
+          "url": "https://xinglong-zhang.github.io/"
+        },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Why are def2 basis sets preferred over Pople basis sets in quantum chemistry?",
+            "url": "https://xinglong-zhang.github.io/blogs/blog1.html"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Git Tutorial: Essential Commands and Scenarios",
+            "url": "https://xinglong-zhang.github.io/blogs/blog2.html"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -29,7 +63,7 @@
       <div class="header"></div>
     </header>
 
-    <div id="header" align="right">
+    <div id="header" style="text-align: right">
       <img
         class="header-image"
         src="images/cuhk_science.jpeg"
@@ -38,26 +72,28 @@
     </div>
 
     <div id="menu">
-      <a href="index.html"><font color="#FFC433">Home</font></a
-      >&nbsp; <a href="people.html"><font color="#FFC433">People</font></a
-      >&nbsp; <a href="research.html"><font color="#FFC433">Research</font></a
-      >&nbsp;
-      <a href="publications.html"><font color="#FFC433">Publications</font></a
-      >&nbsp;
-      <!--            <a href="collaborators.html"><font color=#FFC433>Collaborators</font></a>&nbsp;-->
-      <a href="teaching.html"><font color="#FFC433">Teaching</font></a
-      >&nbsp;
+      <a href="index.html"><span style="color: #ffc433">Home</span></a
+      >  <a href="people.html"><span style="color: #ffc433">People</span></a
+      >  <a href="research.html"><span style="color: #ffc433">Research</span></a
+      > 
+      <a href="publications.html"
+        ><span style="color: #ffc433">Publications</span></a
+      > 
+      <!--            <a href="collaborators.html"><font color=#FFC433>Collaborators</font></a> -->
+      <a href="teaching.html"><span style="color: #ffc433">Teaching</span></a
+      > 
       <!--<a href="rejections.html"><font color=#FFC433>Rejections</font></a>-->
-      <a href="gallery.html"><font color="#FFC433">Gallery</font></a
-      >&nbsp; <a href="resources.html"><font color="#FFC433">Resources</font></a
-      >&nbsp; <a href="openings.html"><font color="#FFC433">Openings</font></a
-      >&nbsp; <a href="blog.html"><font color="#FFC433">Blog</font></a
-      >&nbsp;
-      <a href="zh/index.html"><font color="#FFC433">中文</font></a>
+      <a href="gallery.html"><span style="color: #ffc433">Gallery</span></a
+      > 
+      <a href="resources.html"><span style="color: #ffc433">Resources</span></a
+      >  <a href="openings.html"><span style="color: #ffc433">Openings</span></a
+      >  <a href="blog.html"><span style="color: #ffc433">Blog</span></a
+      > 
+      <a href="zh/index.html"><span style="color: #ffc433">中文</span></a>
     </div>
 
     <div class="paddingleft" id="content">
-      <p>&nbsp;</p>
+      <p> </p>
 
       <table class="publication-table">
         <ol>
@@ -99,7 +135,8 @@
             >
               <img
                 src="images/logo/cuhk_logo.png"
-                align="center"
+                alt="CUHK Official Logo"
+                style="text-align: center"
                 height="120"
               />
             </a>
@@ -107,7 +144,12 @@
 
           <td>
             <a target="_blank" href="https://chem.cuhk.edu.hk/">
-              <img src="images/cuhk_chem.png" align="center" height="130" />
+              <img
+                src="images/cuhk_chem.png"
+                alt="CUHK Chemistry Department Logo"
+                style="text-align: center"
+                height="130"
+              />
             </a>
           </td>
         </tr>
@@ -115,19 +157,23 @@
     </table>
 
     <footer>
-      <p align="center">
-        <a href="https://www.free-counters.org/">free HitCounter</a>
-        <script
-          type="text/javascript"
-          src="https://www.freevisitorcounters.com/auth.php?id=6cb5618195c41ad8fac718e41c1ba75f969a967a"
-        ></script>
-        <script
-          type="text/javascript"
-          src="https://www.freevisitorcounters.com/en/home/counter/1170320/t/7"
-        ></script>
-      </p>
-      <p align="center">Copyright &copy;2018–2025 Xinglong Zhang</p>
-      <p>&nbsp;</p>
+      <div class="counter-container">
+        <a href="https://www.flagcounter.me/details/fQT">
+          <img src="https://www.flagcounter.me/fQT/" alt="Flag Counter" />
+        </a>
+        <div class="visitor-counter">
+          <a href="https://www.free-counters.org/">Total Visitors Count</a>
+          <script
+            type="text/javascript"
+            src="https://www.freevisitorcounters.com/auth.php?id=6cb5618195c41ad8fac718e41c1ba75f969a967a"
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://www.freevisitorcounters.com/en/home/counter/1170320/t/7"
+          ></script>
+        </div>
+      </div>
+      <p>Copyright ©2018–2025 Xinglong Zhang</p>
     </footer>
   </body>
 </html>
