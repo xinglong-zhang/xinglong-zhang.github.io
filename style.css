@@ -391,13 +391,48 @@ ul h4 {
 
 #myList {
   padding: 20px 20px 20px 20px;
-  position: relative; /* Fixed invalid "horizontal" to a valid value */
+  position: relative;
   margin: 10px;
   font-size: 20px;
+  list-style: none; /* Remove default bullets */
 }
-
 #myList li {
   font-size: 20px; /* Explicitly set for list items */
+  position: relative; /* For positioning the emoji */
+  margin-bottom: 10px; /* Space between items */
+}
+/* Award category with trophy emoji */
+#myList li.award::before {
+  content: "🏆"; /* Trophy emoji */
+  position: absolute;
+  left: -28px; /* Adjusted for margin */
+  margin-right: 8px; /* Space after emoji */
+}
+/* Talk category with loudspeaker emoji */
+#myList li.talk::before {
+  content: "🏫"; /* Loudspeaker emoji for talks */
+  position: absolute;
+  left: -28px; /* Adjusted for margin */
+  margin-right: 8px; /* Space after emoji */
+}
+#myList li.conference::before {
+  content: "🌎";
+  position: absolute;
+  left: -28px; /* Adjusted for margin */
+  margin-right: 8px; /* Space after emoji */
+}
+/* New member category with person emoji */
+#myList li.new-member::before {
+  content: "👤"; /* Person emoji */
+  position: absolute;
+  left: -28px; /* Adjusted for margin */
+  margin-right: 8px; /* Space after emoji */
+}
+#myList li.publication::before {
+  content: "📚";
+  position: absolute;
+  left: -28px; /* Adjusted for margin */
+  margin-right: 8px; /* Space after emoji */
 }
 
 #slogan {
