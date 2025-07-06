@@ -113,7 +113,7 @@ figure img {
 }
 
 .alumni-table {
-  width: 100%;
+  width: 1000px;
   border-collapse: collapse;
   margin-left: 80px; /* Adds space to the left of the table */
 }
