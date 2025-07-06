@@ -112,6 +112,28 @@ figure img {
   width: 70%; /* Set width for the second column */
 }
 
+.alumni-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 80px; /* Adds space to the left of the table */
+}
+
+.alumni-table th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  font-size: 22px;
+  color: black;
+}
+
+.alumni-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  color: darkblue;
+}
+
 .award-details {
   width: 110%;
   border-collapse: separate; /* Ensure border-spacing works */
