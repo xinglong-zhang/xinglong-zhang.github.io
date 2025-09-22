@@ -159,11 +159,11 @@ figure img {
 }
 
 .people-details td:nth-child(2) {
-  width: 35%; /* Set width for the second column */
+  width: 40%; /* Set width for the second column */
 }
 
 .people-details td:nth-child(3) {
-  width: 45%; /* Set width for the third column */
+  width: 40%; /* Set width for the third column */
 }
 
 .award-details th:nth-child(1) {
@@ -258,6 +258,15 @@ h4 {
 .h4-text {
   color: black;
   text-align: left;
+}
+
+h4c {
+  color: brown;
+  font-size: 20px;
+}
+.h4c-text {
+  color: black;
+  text-align: center;
 }
 
 h5 {
