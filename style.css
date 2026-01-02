@@ -775,6 +775,8 @@ ul h4 {
 }
 
 #table {
+  clear: both;          /* key line */
+  display: block;       /* makes centering more reliable across browsers */
   padding: 1px 80px 1px 80px;
   position: center;
   background: white;
