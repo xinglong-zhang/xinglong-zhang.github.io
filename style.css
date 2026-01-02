@@ -775,17 +775,23 @@ ul h4 {
 }
 
 #table {
-  clear: both;          /* key line */
-  display: block;       /* makes centering more reliable across browsers */
-  padding: 1px 80px 1px 80px;
-  position: center;
+  clear: both;
+  width: 1000px;              /* keep your fixed width if you want */
+  margin: 20px auto;          /* center it */
   background: white;
-  margin: 10px; /* Corrected from margin: 10 to margin: 10px */
-  height: 50px;
-  width: 1000px;
-  border-top: solid 4px #5ad7d7;
-  border-bottom: solid 4px #5ad7d7;
+  border-top: 4px solid #5ad7d7;
+  border-bottom: 4px solid #5ad7d7;
   border-spacing: 10px 0;
+  height: auto;               /* IMPORTANT: do not force 50px */
+  display: table;             /* table default; safer than block */
+  padding: 0;                 /* padding on table is awkward */
+}
+
+#table td {
+  width: auto;                /* override td{width:950px} */
+  padding: 10px 20px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 p.copyright {
