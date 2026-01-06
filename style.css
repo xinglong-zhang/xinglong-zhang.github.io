@@ -489,6 +489,18 @@ ul h4 {
   left: -28px; /* Adjusted for margin */
   margin-right: 8px; /* Space after emoji */
 }
+#myList li.visitwomen:before {
+  content: "👩‍🏫";
+  position: absolute;
+  left: -28px; /* Adjusted for margin */
+  margin-right: 8px; /* Space after emoji */
+}
+#myList li.appt:before {
+  content: "🤝";
+  position: absolute;
+  left: -28px; /* Adjusted for margin */
+  margin-right: 8px; /* Space after emoji */
+}
 
 #slogan {
   line-height: 160px;
@@ -776,19 +788,19 @@ ul h4 {
 
 #table {
   clear: both;
-  width: 1000px;              /* keep your fixed width if you want */
-  margin: 20px auto;          /* center it */
+  width: 1000px; /* keep your fixed width if you want */
+  margin: 20px auto; /* center it */
   background: white;
   border-top: 4px solid #5ad7d7;
   border-bottom: 4px solid #5ad7d7;
   border-spacing: 10px 0;
-  height: auto;               /* IMPORTANT: do not force 50px */
-  display: table;             /* table default; safer than block */
-  padding: 0;                 /* padding on table is awkward */
+  height: auto; /* IMPORTANT: do not force 50px */
+  display: table; /* table default; safer than block */
+  padding: 0; /* padding on table is awkward */
 }
 
 #table td {
-  width: auto;                /* override td{width:950px} */
+  width: auto; /* override td{width:950px} */
   padding: 10px 20px;
   text-align: center;
   vertical-align: middle;
