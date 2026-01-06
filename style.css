@@ -489,13 +489,13 @@ ul h4 {
   left: -28px; /* Adjusted for margin */
   margin-right: 8px; /* Space after emoji */
 }
-#myList li.visitwomen:before {
+#myList li.visitwomen::before {
   content: "👩‍🏫";
   position: absolute;
   left: -28px; /* Adjusted for margin */
   margin-right: 8px; /* Space after emoji */
 }
-#myList li.appt:before {
+#myList li.appt::before {
   content: "🤝";
   position: absolute;
   left: -28px; /* Adjusted for margin */
