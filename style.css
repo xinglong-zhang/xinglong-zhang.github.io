@@ -521,6 +521,12 @@ ul h4 {
   left: -28px; /* Adjusted for margin */
   margin-right: 8px; /* Space after emoji */
 }
+#myList li.celebrate::before {
+  content: "👏"; /* Trophy emoji */
+  position: absolute;
+  left: -28px; /* Adjusted for margin */
+  margin-right: 8px; /* Space after emoji */
+}
 
 #slogan {
   line-height: 160px;
