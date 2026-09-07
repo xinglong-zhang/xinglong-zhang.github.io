@@ -671,6 +671,10 @@ ul h4 {
   border-top-right-radius: 0;
 }
 
+.yen-sign {
+  font-family: "Times New Roman", Times, serif;
+}
+
 #page {
   padding: 45px 45px 15px 45px;
   position: relative;
